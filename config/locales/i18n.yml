@@ -8164,9 +8164,9 @@ sl: &sl
   add_from_google_drive: Dodaj iz Google Drive
   or_add_from: Ali dodaj iz
   upload_a_new_document: Naloži nov dokument
-  billing: Zaračunavanje
+  billing: Obračun
   hi_there: Živjo
-  templates_that_require_email_or_phone_2fa_cannot_be_used_via_a_shared_link: Predloge, ki zahtevajo e-pošto ali telefonsko 2FA, ni mogoče uporabljati prek skupne povezave.
+  templates_that_require_email_or_phone_2fa_cannot_be_used_via_a_shared_link: Predloge, ki zahtevajo e-poštno ali telefonsko 2FA, ni mogoče uporabljati prek skupne povezave.
   pro: Pro
   thanks: Hvala
   private: Zasebno
@@ -8199,7 +8199,7 @@ sl: &sl
   create_templates_with_private_access_by_default: Ustvari predloge z zasebnim dostopom privzeto
   ensure_unique_recipients: Zagotovi unikatne prejemnike
   edit_per_party: Uredi po stranki
-  reply_to: Odgovori na
+  reply_to: Naslov za odgovore
   pending_by_me: Na čakanju zame
   partially_completed: Delno dokončano
   require_phone_2fa_to_open: Za odprtje zahtevaj telefonsko 2FA
@@ -8233,7 +8233,7 @@ sl: &sl
   you_have_been_invited_to_submit_the_name_form: 'Povabljeni ste k oddaji obrazca "%{name}".'
   you_have_been_invited_to_sign_the_name: 'Povabljeni ste k podpisu "%{name}".'
   alternatively_you_can_review_and_download_your_copy_using_the_link_below: "Alternativno si lahko ogledate in prenesete svojo kopijo prek spodnje povezave:"
-  please_check_the_copy_of_your_name_in_the_email_attachments: 'Prosimo preverite kopijo vašega "%{name}" v prilogah e-pošte.'
+  please_check_the_copy_of_your_name_in_the_email_attachments: 'Prosimo, preverite kopijo dokumenta "%{name}" v prilogah e-pošte.'
   awaiting_completion_by_the_other_party: "Čakanje na dokončanje s strani druge stranke"
   review_and_sign: Preglej in podpiši
   review_and_submit: Preglej in oddaj
@@ -8266,7 +8266,7 @@ sl: &sl
   submitter_documents_copy_email_body: |
     Živjo,
 
-    Prosimo preverite kopijo vašega "{template.name}" v prilogah e-pošte.
+    Prosimo, preverite kopijo dokumenta "{template.name}" v prilogah e-pošte.
     Alternativno si lahko ogledate in prenesete svojo kopijo prek spodnje povezave:
 
     [{template.name}]({documents.link})
@@ -8306,7 +8306,7 @@ sl: &sl
   decline: Zavrni
   declined: Zavrnjeno
   decline_reason: Razlog zavrnitve
-  provide_a_reason: Navesti razlog
+  provide_a_reason: Navedite razlog
   notify_the_sender_with_the_reason_you_declined: Obvesti pošiljatelja o razlogu zavrnitve
   form_has_been_declined_on_html: 'Obrazec je bil zavrnjen <span class="font-semibold">%{time}</span>'
   name_declined_by_submitter: '"%{name}" zavrnil %{submitter}'
@@ -8351,7 +8351,7 @@ sl: &sl
   connect_salesforce_account_to_integrate_with_docuseal: Poveži Salesforce račun za integracijo z DocuSeal
   re_connect_salesforce: Ponovno poveži Salesforce
   connect_salesforce: Poveži Salesforce
-  danger_zone: Nevarna cona
+  danger_zone: Nevarno območje
   delete_my_account: Izbriši moj račun
   you_are_scheduling_your_account_for_deletion_after_deletion_your_data_will_be_permanently_removed_and_cannot_be_recovered_click_ok_if_you_would_like_to_continue: "Načrtujete izbris računa. Po izbrisu bodo vaši podatki trajno odstranjeni in jih ni mogoče obnoviti.\n\nKliknite OK, če želite nadaljevati."
   account_information_has_been_updated: Podatki računa so posodobljeni.
@@ -8503,7 +8503,7 @@ sl: &sl
   verify_pdf: Preveri PDF
   sign_out: Odjava
   page_number: 'Stran %{number}'
-  powered_by: Powered by
+  powered_by: Poganja ga
   count_documents_signed_with_html: '<b>%{count}</b> podpisanih dokumentov z'
   storage: Shranjevanje
   notifications: Obvestila
@@ -8513,11 +8513,11 @@ sl: &sl
   plans: Načrti
   new: Novo
   embedding: Vdelava
-  background_jobs: Ozadna opravila
+  background_jobs: Opravila v ozadju
   need_help_ask_a_question_: 'Potrebujete pomoč? Postavite vprašanje:'
   exit: Izhod
   leave: Zapusti
-  impersonated_as: Imitiran kot
+  impersonated_as: Prevzeta identiteta
   ask_ai: Vprašaj AI
   ai_assistant: AI pomočnik
   discord_community: Discord skupnost
@@ -8668,7 +8668,7 @@ sl: &sl
   team_accounts: Računi ekip
   tenant_account: Račun najemnika
   tenant_accounts: Računi najemnikov
-  impersonate: Imitiraj
+  impersonate: Prevzemi identiteto
   loading: Nalaganje
   documents: Dokumenti
   accounts: Računi
@@ -8709,8 +8709,8 @@ sl: &sl
   template_has_been_cloned: Predloga je klonirana.
   document_template_has_been_moved: Dokumentna predloga je premaknjena.
   unable_to_move_template_into_folder: Ni mogoče premakniti predloge v mapo.
-  template_has_been_unarchived: Predloga je de-arhivirana.
-  submission_has_been_unarchived: Oddaja je de-arhivirana.
+  template_has_been_unarchived: Predloga je dearhivirana.
+  submission_has_been_unarchived: Oddaja je dearhivirana.
   unable_to_update_file: Ni mogoče naložiti datoteke.
   user_has_been_invited: Uporabnik je povabljen.
   unable_to_update_user: Ni mogoče posodobiti uporabnika.
@@ -8777,7 +8777,7 @@ sl: &sl
   download_combined_pdf: Prenesi združen PDF
   audit_log: Revizijski dnevnik
   signers: Podpisniki
-  not_invited_yet:  Še ni povabljen
+  not_invited_yet: Še ni povabljen
   not_completed_yet: Še ni dokončano
   declined_on_time: 'Zavrnjeno dne %{time}'
   expire_on_time: 'Poteče dne %{time}'
@@ -8816,14 +8816,14 @@ sl: &sl
   initials_field: Polje za inicialke
   date_field: Datumsko polje
   number_field: Številsko polje
-  image_field: Slika polje
+  image_field: Polje za sliko
   file_field: Polje za datoteko
   select_field: Izbirno polje
   checkbox_field: Potrditveno polje
-  multiple_field: Večkratna izbira polje
-  radio_field: Radijsko skupinsko polje
-  cells_field: Celice polje
-  stamp_field: Žig polje
+  multiple_field: Polje za večkratno izbiro
+  radio_field: Polje za izbirno skupino
+  cells_field: Polje za celice
+  stamp_field: Polje za žig
   payment_field: Plačilno polje
   phone_field: Telefonsko polje
   verification_field: Preverjanje identitete
@@ -8838,7 +8838,7 @@ sl: &sl
   completed_at: Dokončano ob
   edit_recipient: Uredi prejemnika
   update_recipient: Posodobi prejemnika
-  use_international_format_1xxx_: 'Uporabi mednarodno obliko: +1xxx...'
+  use_international_format_1xxx_: 'Uporabi mednarodno obliko: +386...'
   submitter_cannot_be_updated: Podpisnika ni mogoče posodobiti.
   at_least_one_field_must_be_filled: Vsaj eno polje mora biti izpolnjeno.
   archived_users: Arhivirani uporabniki
@@ -8961,7 +8961,7 @@ sl: &sl
   connect_your_email_or_outlook_account_or_add_smtp_settings_to_bulk_send: Povežite Gmail ali Outlook ali dodajte SMTP za masovno pošiljanje.
   are_you_sure_you_want_to_add_recipients_without_sending_to_send_emails_it_requires_to_connect_gmail_or_outlook: Ste prepričani, da želite dodati prejemnike brez pošiljanja? Za pošiljanje e-pošt je potrebna povezava Gmail ali Outlook.
   template_name_has_been_completed_by_submitters_html: '"<strong>{template.name}</strong>" je dokončal <strong>{submission.submitters}</strong>'
-  please_check_the_copy_of_your_template_name_in_the_email_attachments_html: 'Prosimo preverite kopijo vašega "<strong>{template.name}</strong>" v prilogah e-pošte.'
+  please_check_the_copy_of_your_template_name_in_the_email_attachments_html: 'Prosimo, preverite kopijo dokumenta "<strong>{template.name}</strong>" v prilogah e-pošte.'
   you_have_been_invited_to_sign_the_template_name_html: 'Povabljeni ste k podpisu "<strong>{template.name}</strong>".'
   reveal_api_key: Razkrij API ključ
   enter_your_password_to_reveal_the_api_key: Vnesite geslo za razkritje API ključa
@@ -9025,7 +9025,7 @@ sl: &sl
   your_email_address_has_been_released_immediately_you_can_now_be_added_to_your_company_team_without_waiting_for_the_deletion_period_to_end: Vaš e-poštni naslov je bil takoj sproščen. Če se pridružujete ekipi, vas je zdaj mogoče dodati v ekipo podjetja brez čakanja na iztek obdobja izbrisa.
   reset_default: Ponastavi privzeto
   send_signature_request_email: Pošlji e-pošto zahteve po podpisu
-  last_3_months: Zadnji 3 meseci
+  last_3_months: Zadnje 3 mesece
   last_6_months: Zadnjih 6 mesecev
   last_year: Zadnje leto
   all_time: Ves čas
@@ -9049,9 +9049,9 @@ sl: &sl
   rate_limit_exceeded: Presežena omejitev hitrosti
   a_confirmation_email_has_been_sent_to_the_new_email_address: Potrditvena e-pošta je poslana na nov e-naslov.
   email_address_is_awaiting_confirmation_follow_the_link_in_the_email_to_confirm: "%{email} e-naslov čaka na potrditev. Sledite povezavi v e-pošti za potrditev."
-  please_confirm_your_email_address_using_the_link_below_: 'Prosimo potrdite e-naslov prek spodnje povezave:'
+  please_confirm_your_email_address_using_the_link_below_: 'Prosimo, potrdite e-naslov prek spodnje povezave:'
   confirm_email: Potrdi e-pošto
-  please_verify_your_email_address_to_continue: Prosimo preverite e-naslov za nadaljevanje.
+  please_verify_your_email_address_to_continue: Prosimo, preverite e-naslov za nadaljevanje.
   verification_code_sent_click_link_or_enter_code: Potrditvena koda je poslana na e-pošto. Kliknite povezavo v e-pošti ali vnesite enkratno kodo za potrditev.
   use_otp_code_to_verify_email_or_click_link_below_html: 'Uporabite kodo <b>%{code}</b> za preverjanje e-pošte ali kliknite spodnjo povezavo:'
   verify_your_email: Preveri e-pošto
@@ -9074,7 +9074,7 @@ sl: &sl
   token: Žeton
   mcp_server: MCP strežnik
   instructions: Navodila
-  please_copy_the_token_below_now_as_it_wont_be_shown_again: Prosimo kopirajte spodnji žeton zdaj, saj ga ne bomo več prikazali
+  please_copy_the_token_below_now_as_it_wont_be_shown_again: Prosimo, kopirajte spodnji žeton zdaj, saj ga ne bomo več prikazali
   mcp_token_has_been_created: MCP žeton je ustvarjen.
   mcp_token_has_been_removed: MCP žeton je odstranjen.
   enable_mcp_server: Omogoči MCP strežnik
@@ -9100,7 +9100,7 @@ sl: &sl
   submission_event_names:
     send_email_to_html: '<b>E-pošta poslana</b> na %{submitter_name}'
     bounce_email_html: '<b>E-pošta odbita</b> %{submitter_name}'
-    complaint_email_html: '<b>Pritožba zaradi spam</b> %{submitter_name}'
+    complaint_email_html: '<b>Pritožba zaradi neželene pošte</b> %{submitter_name}'
     send_reminder_email_to_html: '<b>Opomnik e-pošte poslan</b> na %{submitter_name}'
     send_sms_to_html: '<b>SMS poslan</b> na %{submitter_name}'
     send_2fa_sms_to_html: '<b>Potrditveni SMS poslan</b> na %{submitter_name}'
