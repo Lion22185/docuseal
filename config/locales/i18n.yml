@@ -7,6 +7,7 @@ en: &en
   language_pt-PT: Português
   language_de-DE: Deutsch
   language_nl-NL: Nederlands
+  language_sl-SI: Slovenščina
   language_es: Español
   language_it: Italiano
   language_de: Deutsch
@@ -17,6 +18,7 @@ en: &en
   language_pt: Português
   language_he: עברית
   language_nl: Nederlands
+  language_sl: Slovenščina
   language_ar: العربية
   language_ko: 한국어
   language_ja: 日本語
@@ -8133,3 +8135,1087 @@ it-IT:
 
 nl-NL:
   <<: *nl
+
+sl: &sl
+  # Core UI translations (expanded as needed)
+  language_en: Angleščina
+  language_en-US: Angleščina (ZDA)
+  language_en-GB: Angleščina (VB)
+  language_es-ES: Španščina
+  language_fr-FR: Francoščina
+  language_pt-PT: Portugalščina
+  language_de-DE: Nemščina
+  language_nl-NL: Nizozemščina
+  language_sl-SI: Slovenščina
+  language_es: Španščina
+  language_it: Italijanščina
+  language_de: Nemščina
+  language_fr: Francoščina
+  language_pl: Poljščina
+  language_uk: Ukrajinščina
+  language_cs: Češčina
+  language_pt: Portugalščina
+  language_he: Hebrejščina
+  language_nl: Nizozemščina
+  language_sl: Slovenščina
+  language_ar: Arabščina
+  language_ko: Korejščina
+  language_ja: Japonščina
+  add_from_google_drive: Dodaj iz Google Drive
+  or_add_from: Ali dodaj iz
+  upload_a_new_document: Naloži nov dokument
+  billing: Zaračunavanje
+  hi_there: Živjo
+  templates_that_require_email_or_phone_2fa_cannot_be_used_via_a_shared_link: Predloge, ki zahtevajo e-pošto ali telefonsko 2FA, ni mogoče uporabljati prek skupne povezave.
+  pro: Pro
+  thanks: Hvala
+  private: Zasebno
+  _variables: Spremenljivke
+  make_all_newly_created_templates_private_to_their_creator_and_admins_by_default: Naj bodo vse novo ustvarjene predloge privzeto zasebne za ustvarjalca in skrbnike.
+  create_templates_with_admin_access_by_default: Ustvari predloge s skrbniškim dostopom privzeto
+  require_email_2fa: Zahtevaj e-poštno 2FA
+  when_checked_each_signer_must_verify_their_email_with_a_one_time_code_before_accessing_the_document: Če je označeno, mora vsak podpisnik pred dostopom do dokumenta potrditi svoj e-naslov z enkratno kodo.
+  require_phone_2fa: Zahtevaj telefonsko 2FA
+  when_checked_each_signer_must_verify_their_phone_with_a_one_time_code_before_accessing_the_document: Če je označeno, mora vsak podpisnik pred dostopom do dokumenta potrditi svojo telefonsko številko z enkratno kodo.
+  select: Izberi
+  enabled: Omogočeno
+  disabled: Onemogočeno
+  party: Stranka
+  make_owner: Naredi lastnika
+  use_direct_file_attachment_links_in_the_documents: Uporabi neposredne povezave do priponk v dokumentih
+  click_here_to_send_a_reset_password_email_html: '<label class="link" for="resend_password_button">Klikni tukaj</label>, da pošlješ e-pošto za ponastavitev gesla.'
+  edit_order: Uredi vrstni red
+  expirable_file_download_links: Povezave za prenos datotek z veljavnostjo
+  sender_form_fields: Polja obrazca pošiljatelja
+  default_parties: Privzete stranke
+  authenticate_embedded_form_preview_with_token: Overi predogled vdelanega obrazca s tokenom
+  stripe_integration: Stripe integracija
+  require_all_recipients: Zahtevaj vse prejemnike
+  stripe_account_has_been_connected: Stripe račun je bil povezan.
+  re_connect_stripe: Ponovno poveži Stripe
+  bcc_recipients: BCC prejemniki
+  resend_pending: Ponovno pošlji čakajoče
+  always_enforce_signing_order: Vedno vsili vrstni red podpisovanja
+  create_templates_with_private_access_by_default: Ustvari predloge z zasebnim dostopom privzeto
+  ensure_unique_recipients: Zagotovi unikatne prejemnike
+  edit_per_party: Uredi po stranki
+  reply_to: Odgovori na
+  pending_by_me: Na čakanju zame
+  partially_completed: Delno dokončano
+  require_phone_2fa_to_open: Za odprtje zahtevaj telefonsko 2FA
+  the_sender_has_requested_a_two_factor_authentication_via_one_time_password_sent_to_your_html: Pošiljatelj je zahteval dvofaktorsko overjanje prek enkratnega gesla, poslanega na tvojo <b>%{phone}</b> telefonsko številko.
+  send_verification_code: Pošlji potrditveno kodo
+  code_has_been_resent: Koda je bila ponovno poslana
+  invalid_code: Neveljavna koda
+  signed: Podpisano
+  first_party: 'Prva stranka'
+  remove_filter: Odstrani filter
+  add: Dodaj
+  adding: Dodajanje
+  owner: Lastnik
+  select_user: Izberi uporabnika
+  team_member_permissions: Dovoljenja člana ekipe
+  entire_team: Celotna ekipa
+  admin_only: Samo skrbniki
+  accessiable_by: Dostopno za
+  team_access: Dostop ekipe
+  document_download_filename_format: Format imena datoteke pri prenosu dokumenta
+  docuseal_trusted_signature: DocuSeal zaupanja vreden podpis
+  hello_name: Živjo %{name}
+  you_are_invited_to_product_name: Povabljeni ste k %{product_name}
+  you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Povabljeni ste k %{account_name} %{product_name}. Registrirajte se prek spodnje povezave:'
+  sent_using_product_name_in_testing_mode_html: 'Poslano prek <a href="%{product_url}">%{product_name}</a> v testnem načinu'
+  sent_using_product_name_open_source_software_html: 'Poslano z odprtokodno programsko opremo <a href="%{product_url}">%{product_name}</a>.'
+  sent_using_product_name_free_document_signing_html: 'Poslano prek <a href="%{product_url}">%{product_name}</a> brezplačnega podpisovanja dokumentov.'
+  sent_with_docuseal_pro_html: 'Poslano z <a href="%{product_url}">DocuSeal Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Pokaži atribucijo "Poslano z <span class="link">DocuSeal Pro</span>" v e-poštah
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Podpišite dokumente z zaupanja vrednim potrdilom DocuSeal. Vaši dokumenti in podatki nikoli niso deljeni z DocuSeal. Za generiranje zaupanja vrednega podpisa je zagotovljen PDF checksum.
+  you_have_been_invited_to_submit_the_name_form: 'Povabljeni ste k oddaji obrazca "%{name}".'
+  you_have_been_invited_to_sign_the_name: 'Povabljeni ste k podpisu "%{name}".'
+  alternatively_you_can_review_and_download_your_copy_using_the_link_below: "Alternativno si lahko ogledate in prenesete svojo kopijo prek spodnje povezave:"
+  please_check_the_copy_of_your_name_in_the_email_attachments: 'Prosimo preverite kopijo vašega "%{name}" v prilogah e-pošte.'
+  awaiting_completion_by_the_other_party: "Čakanje na dokončanje s strani druge stranke"
+  review_and_sign: Preglej in podpiši
+  review_and_submit: Preglej in oddaj
+  please_contact_us_by_replying_to_this_email_if_you_have_any_questions: "Če imate kakršnakoli vprašanja, nam pišite z odgovorom na to e-pošto."
+  submitter_invitation_sms_body_sign: '{account.name} vas vabi k podpisu dokumenta: {submitter.link}'
+  verification_code_sms_body: 'Potrditvena koda: {code}'
+  you_are_invited_to_submit_a_form: 'Povabljeni ste k oddaji obrazca'
+  you_are_invited_to_sign_a_document: 'Povabljeni ste k podpisu dokumenta'
+  you_are_invited_to_sign_documents: 'Povabljeni ste k podpisu dokumentov'
+  your_document_copy: 'Vaša kopija dokumenta'
+  name_has_been_completed_by_submitters: '"%{name}" je dokončal %{submitters}.'
+  template_name_has_been_completed_by_submitters: '{template.name} je dokončal {submission.submitters}'
+  submitter_invitation_email_sign_body: |
+    Živjo,
+
+    Povabljeni ste k podpisu "{template.name}".
+
+    [Preglej in podpiši]({submitter.link})
+
+    Če imate kakršnakoli vprašanja, nam pišite z odgovorom na to e-pošto.
+
+    Hvala,
+    {account.name}
+  submitter_completed_email_body: |
+    Živjo,
+
+    "{template.name}" je dokončal {submission.submitters}
+
+    {submission.link}
+  submitter_documents_copy_email_body: |
+    Živjo,
+
+    Prosimo preverite kopijo vašega "{template.name}" v prilogah e-pošte.
+    Alternativno si lahko ogledate in prenesete svojo kopijo prek spodnje povezave:
+
+    [{template.name}]({documents.link})
+
+    Hvala,
+    {account.name}
+  view: Ogled
+  email: E-pošta
+  form_expired_at_html: 'Obrazec je potekel <span class="font-semibold">%{time}</span>'
+  verification_code_code: 'Potrditvena koda: %{code}'
+  digitally_signed_by: Digitalno podpisal
+  role: Vloga
+  reason: Razlog
+  provide_your_email_to_start: Vnesite e-pošto za začetek
+  provide_your_email: Vnesite e-pošto
+  provide_your_name_to_start: Vnesite ime za začetek
+  provide_your_name: Vnesite ime
+  provide_your_phone_in_international_format_to_start: Vnesite telefonsko številko v mednarodni obliki za začetek
+  provide_your_phone_in_international_format: Vnesite telefonsko številko v mednarodni obliki
+  start: Začni
+  enforce_recipients_order: Vsili vrstni red prejemnikov
+  starting: Začenjanje
+  invited_by_html: 'Povabljen s strani <span class="font-semibold">%{name}</span>'
+  you_have_been_invited_to_submit_a_form: Povabljeni ste k oddaji obrazca
+  signed_on_time: 'Podpisano dne %{time}'
+  completed_on_time: 'Dokončano dne %{time}'
+  document_has_been_signed_already: Dokument je že podpisan
+  form_has_been_submitted_already: Obrazec je že oddan
+  send_copy_to_email: Pošlji kopijo na e-pošto
+  sending: Pošiljanje
+  resubmit: Ponovno oddaj
+  form_has_been_deleted_by_html: 'Obrazec je izbrisal <span class="font-semibold">%{name}</span>.'
+  or: ali
+  download_documents: Prenesi dokumente
+  downloading: Prenos
+  download: Prenesi
+  decline: Zavrni
+  declined: Zavrnjeno
+  decline_reason: Razlog zavrnitve
+  provide_a_reason: Navesti razlog
+  notify_the_sender_with_the_reason_you_declined: Obvesti pošiljatelja o razlogu zavrnitve
+  form_has_been_declined_on_html: 'Obrazec je bil zavrnjen <span class="font-semibold">%{time}</span>'
+  name_declined_by_submitter: '"%{name}" zavrnil %{submitter}'
+  name_declined_by_submitter_with_the_following_reason: '"%{name}" je zavrnil %{submitter} z naslednjim razlogom:'
+  completed_successfully: Uspešno dokončano
+  password: Geslo
+  sign_in: Prijava
+  signing_in: Prijava v teku
+  sign_in_with_microsoft: Prijava z Microsoft
+  sign_in_with_google: Prijava z Google
+  forgot_your_password_: Ste pozabili geslo?
+  create_free_account: Ustvari brezplačen račun
+  already_have_an_account: Že imate račun?
+  first_name: Ime
+  last_name: Priimek
+  sign_up: Registracija
+  signing_up: Registracija v teku
+  profile_details: Podrobnosti profila
+  sign_up_with_google: Registriraj se z Google
+  sign_up_with_microsoft: Registriraj se z Microsoft
+  by_creating_an_account_you_agree_to_our_html: 'Z ustvarjanjem računa se strinjate z našo <a target="_blank" href="https://www.docuseal.com/privacy">politiko zasebnosti</a> in <a target="_blank" href="https://www.docuseal.com/terms">pogoji uporabe</a>.'
+  enter_email_to_continue: Vnesite e-pošto za nadaljevanje
+  account: Račun
+  preferences: Nastavitve
+  company_name: Ime podjetja
+  time_zone: Časovni pas
+  language: Jezik
+  app_url: URL aplikacije
+  update: Posodobi
+  updating: Posodabljanje
+  force_2fa_with_authenticator_app: Vsili 2FA z aplikacijo za overjanje
+  add_signature_id_to_the_documents: Dodaj ID podpisa v dokumente
+  require_signing_reason: Zahtevaj razlog podpisa
+  allow_typed_text_signatures: Dovoli podpis z vtipkanim besedilom
+  allow_to_resubmit_completed_forms: Dovoli ponovno oddajo dokončanih obrazcev
+  allow_to_decline_documents: Dovoli zavrnitev dokumentov
+  remember_and_pre_fill_signatures: Zapomni in predizpolni podpise
+  require_authentication_for_file_download_links: Zahtevaj overjanje za povezave prenosa datotek
+  combine_completed_documents_and_audit_log: Združi dokončane dokumente in revizijski dnevnik
+  salesforce_integration: Salesforce integracija
+  salesforce_has_been_connected: Salesforce je povezan.
+  connect_salesforce_account_to_integrate_with_docuseal: Poveži Salesforce račun za integracijo z DocuSeal
+  re_connect_salesforce: Ponovno poveži Salesforce
+  connect_salesforce: Poveži Salesforce
+  danger_zone: Nevarna cona
+  delete_my_account: Izbriši moj račun
+  you_are_scheduling_your_account_for_deletion_after_deletion_your_data_will_be_permanently_removed_and_cannot_be_recovered_click_ok_if_you_would_like_to_continue: "Načrtujete izbris računa. Po izbrisu bodo vaši podatki trajno odstranjeni in jih ni mogoče obnoviti.\n\nKliknite OK, če želite nadaljevati."
+  account_information_has_been_updated: Podatki računa so posodobljeni.
+  should_be_a_valid_url: mora biti veljaven URL
+  your_account_will_be_permanently_deleted_within_2_months_please_contact_us_if_you_want_to_keep_your_account: Vaš račun bo trajno izbrisan v 2 mesecih. Kontaktirajte nas, če želite račun obdržati.
+  test_mode: Testni način
+  copy: Kopiraj
+  copied: Kopirano
+  rotate: Zavrti
+  remove_existing_api_token_and_generated_a_new_one_are_you_sure_: Odstrani obstoječi API žeton in ustvari novega. Ste prepričani?
+  request_signature_multiple_submitters_with_default_values: Zahtevaj podpis, več podpisnikov s privzetimi vrednostmi
+  request_signature_single_submitter: Zahtevaj podpis, en podpisnik
+  template_details: Podrobnosti predloge
+  open_full_api_reference: Odpri polno API referenco
+  api_token_has_been_updated: API žeton je posodobljen.
+  change_your_password: Spremeni geslo
+  new_password: Novo geslo
+  minimum_password_length_characters_minimum: 'najmanj %{minimum_password_length} znakov'
+  confirm_new_password: Potrdi novo geslo
+  change_my_password: Spremeni moje geslo
+  changing_password: Spreminjanje gesla
+  reset_password: Ponastavi geslo
+  resetting_password: Ponastavljanje gesla
+  sign_in_with_name_account: 'Prijava z računom %{name}'
+  two_factor_code_from_authenticator_app: Dvofaktorska koda iz aplikacije za overjanje
+  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Registrirajte se v DocuSeal Console za nadgradnjo. Lokalna aplikacija je popolnoma samostojna, Console služi samo za upravljanje licence.
+  send_from_email: Pošlji z e-naslova
+  optional: neobvezno
+  save: Shrani
+  saving: Shranjevanje
+  changes_have_been_saved: Spremembe so shranjene.
+  unlock_with_docuseal_pro: Odkleni z DocuSeal Pro
+  use_your_own_certificates_to_sign_and_verify_pdf_files: Uporabi lastna potrdila za podpis in preverjanje PDF datotek.
+  upload_certificate: Naloži potrdilo
+  name: Ime
+  file: Datoteka
+  use_a_valid_der_p12_or_pfx_file: Uporabi veljavno .der, .p12 ali .pfx datoteko.
+  submit: Oddaj
+  submitting: Oddajanje
+  pdf_signature: PDF podpis
+  upload_signed_pdf_file_to_validate_its_signature_: 'Naloži podpisano PDF datoteko za preverjanje podpisa:'
+  analyzing: Analiziranje
+  verify_signed_pdf: Preveri podpisan PDF
+  click_to_upload_or_drag_and_drop_html: 'Klikni za nalaganje ali povleci in spusti'
+  click_to_upload_or_drag_and_drop_files_html: '<span class="font-medium">Klikni za nalaganje</span> ali povleci in spusti datoteke'
+  signing_certificates: Potrdila za podpisovanje
+  upload_cert: Naloži potrdilo
+  valid_to: Veljavno do
+  status: Status
+  make_default: Nastavi kot privzeto
+  remove: Odstrani
+  removing: Odstranjevanje
+  delete: Izbriši
+  default: Privzeto
+  are_you_sure_: Ste prepričani?
+  timestamp_server: Strežnik za časovni žig
+  timeserver_url: URL časovnega strežnika
+  url_of_the_trusted_rfc_3161_timeserver_to_be_used_to_generate_timestamp_signatures: URL zaupanja vrednega RFC 3161 časovnega strežnika za generiranje časovnih žigov podpisov.
+  apply_multiple_pdf_digital_signatures_in_the_document_per_each_signer: Uporabi več digitalnih PDF podpisov v dokumentu za vsakega podpisnika
+  remove_pdf_form_fillable_fields_from_the_signed_pdf_flatten_form: Odstrani izpolnljiva polja PDF obrazca iz podpisanega PDF (poravnaj obrazec)
+  certificate_has_been_successfully_added: Potrdilo je uspešno dodano.
+  default_certificate_has_been_selected: Privzeto potrdilo je izbrano.
+  certificate_has_been_removed: Potrdilo je odstranjeno.
+  already_exists: že obstaja.
+  welcome_to_product_name: 'Dobrodošli v %{product_name}'
+  set_password: Nastavi geslo
+  confirm_password: Potrdi novo geslo
+  save_password_and_sign_in: Shrani geslo in se prijavi
+  use_an_authenticator_mobile_app_like_google_authenticator_or_1password_to_scan_the_qr_code_below: Uporabite mobilno aplikacijo za overjanje (npr. Google Authenticator ali 1Password) za skeniranje spodnje QR kode.
+  remove_2fa: Odstrani 2FA
+  setup_2fa: Nastavi 2FA
+  2fa_has_been_configured: 2FA je nastavljen.
+  code_is_invalid: Koda je neveljavna
+  2fa_has_been_removed: 2FA je odstranjen.
+  2fa_has_been_set_up_already: 2FA je že nastavljen.
+  developer_newsletters: novice za razvijalce
+  skip: Preskoči
+  email_notifications: E-poštna obvestila
+  receive_notification_emails_on_completed_submission: Prejemaj e-poštna obvestila ob dokončani oddaji
+  completed_documents_notification_bcc_address: BCC naslov za obvestila o dokončanih dokumentih
+  sign_request_email_reminders: Opomniki e-pošte za zahteve po podpisu
+  send_automatic_email_reminders_to_your_recipients: Pošiljaj samodejne e-poštne opomnike prejemnikom.
+  first_reminder_in: Prvi opomnik čez
+  second_reminder_in: Drugi opomnik čez
+  third_reminder_in: Tretji opomnik čez
+  learn_more: Več informacij
+  unable_to_save: Ni mogoče shraniti.
+  invalid_timeserver: Neveljaven časovni strežnik
+  email_templates: E-poštne predloge
+  signature_request_email: E-pošta zahteve po podpisu
+  signature_request_reminder_email: E-pošta opomnika zahteve po podpisu
+  signature_request_sms: SMS zahteve po podpisu
+  verification_code_sms: SMS potrditvene kode
+  completed_notification_email: E-pošta obvestila o dokončanju
+  company_logo: Logotip podjetja
+  submission_form: Obrazec oddaje
+  completed_form_message: Sporočilo ob dokončanem obrazcu
+  completed_form_redirect_button: Gumb za preusmeritev ob dokončanem obrazcu
+  documents_copy_email: E-pošta kopije dokumentov
+  form_custom_css: Po meri CSS za obrazec
+  subject: Zadeva
+  body: Vsebina
+  text_message: Besedilno sporočilo
+  title: Naslov
+  button_title: Naslov gumba
+  button_url: URL gumba
+  upload_logo: Naloži logotip
+  show_confetti_on_successful_completion: Pokaži konfete ob uspešnem dokončanju
+  attach_audit_log_pdf: Priloži revizijski dnevnik PDF
+  attach_documents: Priloži dokumente
+  settings_have_been_saved: Nastavitve so shranjene.
+  display_your_company_name_and_logo_when_signing_documents: Prikaži ime in logotip podjetja pri podpisovanju dokumentov.
+  profile: Profil
+  signature: Podpis
+  update_signature: Posodobi podpis
+  unable_to_save_signature: Ni mogoče shraniti podpisa.
+  signature_has_been_saved: Podpis je shranjen.
+  signature_has_been_removed: Podpis je odstranjen.
+  initials: Inicialke
+  update_initials: Posodobi inicialke
+  unable_to_save_initials: Ni mogoče shraniti inicialk.
+  initials_has_been_saved: Inicialke so shranjene.
+  initials_has_been_removed: Inicialke so odstranjene.
+  change_password: Spremeni geslo
+  two_factor_authentication: Dvofaktorsko overjanje
+  2fa_is_not_configured: 2FA ni nastavljen
+  set_up_2fa: Nastavi 2FA
+  contact_information_has_been_update: Kontaktni podatki so posodobljeni.
+  password_has_been_changed: Geslo je spremenjeno.
+  email_integration: Integracija e-pošte
+  send_via_connected_email: Pošlji prek povezane e-pošte
+  activate_with_docuseal_pro: Aktiviraj z DocuSeal Pro
+  send_signature_request_to_your_recipients_directly_from_your_email: Pošlji zahtevo po podpisu neposredno iz svoje e-pošte
+  connect_gmail: Poveži Gmail
+  re_connect_gmail: Ponovno poveži Gmail
+  connect_microsoft: Poveži Microsoft
+  re_connect_microsoft: Ponovno poveži Microsoft
+  gmail_has_been_connected: Gmail je povezan.
+  microsoft_account_has_been_connected: Microsoft račun je povezan.
+  but_not_activated: a ni aktiviran
+  email_has_been_sent: E-pošta je bila poslana.
+  email_has_been_sent_already: E-pošta je že bila poslana.
+  initial_setup: Začetna nastavitev
+  demo_environment: Demo okolje
+  close: Zapri
+  upgrade: Nadgradi
+  settings: Nastavitve
+  console: Konzola
+  verify_pdf: Preveri PDF
+  sign_out: Odjava
+  page_number: 'Stran %{number}'
+  powered_by: Powered by
+  count_documents_signed_with_html: '<b>%{count}</b> podpisanih dokumentov z'
+  storage: Shranjevanje
+  notifications: Obvestila
+  e_signature: Elektronski podpis
+  personalization: Prilagajanje
+  users: Uporabniki
+  plans: Načrti
+  new: Novo
+  embedding: Vdelava
+  background_jobs: Ozadna opravila
+  need_help_ask_a_question_: 'Potrebujete pomoč? Postavite vprašanje:'
+  exit: Izhod
+  leave: Zapusti
+  impersonated_as: Imitiran kot
+  ask_ai: Vprašaj AI
+  ai_assistant: AI pomočnik
+  discord_community: Discord skupnost
+  integrations: Integracije
+  teams: Ekipe
+  tenants: Najemniki
+  send_signature_requests_via_sms: Pošlji zahteve po podpisu prek SMS
+  twilio_settings: Twilio nastavitve
+  webhook_settings: Webhook nastavitve
+  sending_sms: Pošiljanje SMS
+  from: Od
+  account_sid: Account SID
+  send_sms_via_webhook: Pošlji SMS prek webhooka
+  webhook_integration_allows_to_send_sms_using_any_provider: Webhook integracija omogoča pošiljanje SMS prek kateregakoli ponudnika
+  test: Test
+  single_sign_on_with_saml_2_0: Enotna prijava s SAML 2.0
+  force_sso_disable_login_with_email_and_password: Vsili SSO (onemogoči prijavo z e-pošto in geslom)
+  for_aws_s3_compatible_apis_like_minio: Za AWS S3 kompatibilne API-je kot Minio.
+  store_all_files_on_disk: Shrani vse datoteke na disk
+  no_configs_are_needed_but_make_sure_your_disk_is_persistent: Konfiguracije niso potrebne, a poskrbite, da je disk obstojen
+  not_suitable_for_heroku_and_other_paas: Ni primerno za Heroku in druge PaaS
+  bulk_send_from_excel_xlsx_or_csv: Masovno pošiljanje iz Excel XLSX ali CSV
+  add_new: Dodaj novo
+  add_recipients: Dodaj prejemnike
+  add_new_recipients: Dodaj nove prejemnike
+  add_recipients_html: <span>Dodaj <span class="hidden md:inline">prejemnike</span></span>
+  type_emails_here: Vnesite e-naslove tukaj
+  or_embed_on_your_website: Ali vdelaj na svojo spletno stran
+  phone: Telefon
+  send_emails: Pošlji e-pošte
+  edit_message: Uredi sporočilo
+  smtp_not_configured: SMTP ni nastavljen
+  configure_smtp_settings_in_order_to_send_emails_: 'Nastavite SMTP parametre za pošiljanje e-pošt:'
+  go_to_smtp_settings: Pojdi na SMTP nastavitve
+  save_as_default_template_message: Shrani kot privzeto predlogo sporočila
+  re_send_sms: Ponovno pošlji SMS
+  send_sms: Pošlji SMS
+  preserve_order: Ohrani vrstni red
+  when_checked_notifications_will_be_sent_to_the_second_party_once_the_form_is_completed_by_the_previous_party_uncheck_this_option_to_send_notifications_to_all_parties_simultaneously_right_away: Če je označeno, bodo obvestila poslana drugi stranki šele po dokončanju prejšnje stranke. Odznačite za takojšnja obvestila vsem strankam hkrati.
+  upgrade_to_send_unlimited_signature_requests: Nadgradi za neomejeno število zahtev po podpisu
+  add_without_sending: Dodaj brez pošiljanja
+  upgade_now: Nadgradi zdaj
+  send_signature_request_emails_without_limits_with_docuseal_pro: Pošiljaj e-pošte zahtev po podpisu brez omejitev z DocuSeal Pro
+  count_emails_used: '%{count} e-pošt porabljenih'
+  has_been_connected: je povezan
+  sms_not_configured: SMS ni nastavljen
+  configure_sms_settings_in_order_to_send_text_messages_: 'Nastavite SMS parametre za pošiljanje sporočil:'
+  go_to_sms_settings: Pojdi na SMS nastavitve
+  back_to_active: Nazaj na aktivne
+  submissions: Oddaje
+  templates: Predloge
+  document_templates_html: <span class="hidden md:inline">Dokumentne</span> predloge
+  archived: Arhivirano
+  search: Iskanje
+  submissions_not_found: Oddaj ni najdenih
+  create: Ustvari
+  view_archived: Ogled arhiviranih
+  all: Vse
+  pending: Na čakanju
+  completed: Dokončano
+  primarily_opened_with_microsoft_excel_other_options_include_google_sheets_libreoffice_calc_and_openoffice_calc: 'Primarno odpiranje z Microsoft Excel. Druge možnosti: Google Sheets, LibreOffice Calc, OpenOffice Calc.'
+  can_be_opened_with_microsoft_excel_google_sheets_or_any_text_editor_like_notepad: Lahko se odpre z Microsoft Excel, Google Sheets ali katerimkoli urejevalnikom besedila (npr. Beležnica).
+  draw_signature: Nariši podpis
+  clear: Počisti
+  signature_uploaded: Podpis naložen
+  submission_deletion_is_irreversible_and_will_permanently_remove_all_associated_signed_documents_with_it_are_you_sure_: 'Izbris oddaje je nepovraten in bo trajno odstranil vse povezane podpisane dokumente. Ste prepričani?'
+  return_back_to_your_desktop_device_to_complete_the_form_or_continue_on_mobile_html: 'Vrnite se na namizno napravo za dokončanje obrazca ali <a class="link" href="%{link}">nadaljujte na mobilni</a>'
+  template_deletion_is_irreversible_and_will_permanently_remove_all_associated_signed_documents_with_it_are_you_sure_: Izbris predloge je nepovraten in bo trajno odstranil vse povezane podpisane dokumente. Ste prepričani?
+  rename_folder: Preimenuj mapo
+  folder_name: Ime mape
+  rename: Preimenuj
+  home: Domov
+  templates_not_found: Predlog ni najdenih
+  upload_new_document: Naloži nov dokument
+  uploading: Nalaganje
+  expired: Poteklo
+  sign_now: Podpiši zdaj
+  archive: Arhiviraj
+  archiving: Arhiviranje
+  restore: Obnovi
+  restoring: Obnavljanje
+  clone: Kloniraj
+  edit: Uredi
+  move: Premakni
+  moving: Premikanje
+  preview: Predogled
+  upload: Naloži
+  clone_template: Kloniraj predlogo
+  new_document_template: Nova dokumentna predloga
+  document_name: Ime dokumenta
+  change_folder: Spremeni mapo
+  shared: v skupni rabi
+  export: Izvozi
+  there_are_no_submissions: Ni oddaj
+  send_an_invitation_to_fill_and_complete_the_form: Pošlji povabilo za izpolnitev in dokončanje obrazca
+  send_to_recipients: Pošlji prejemnikom
+  sign_it_yourself: Podpiši sam
+  api_and_embedding: API in vdelava
+  template_id: ID predloge
+  embedding_url: URL vdelave
+  share_template_with_test_mode: Deli predlogo s testnim načinom
+  share_template_with_all_tenants: Deli predlogo z vsemi najemniki
+  use_following_placeholders_text_: 'Uporabi naslednje ograde:'
+  users_count_total_users_count_pro_users_limit_was_reached_to_invite_additional_users_please_purchase_more_pro_user_seats_via_the_manage_plan_button: '%{users_count}/%{total_users_count} omejitev Pro uporabnikov dosežena. Za dodatne uporabnike kupite več sedežev prek gumba "Upravljaj načrt".'
+  move_into_folder: Premakni v mapo
+  new_folder_name: Novo ime mape
+  new_subfolder_name: Novo ime podmape
+  change_parent_folder: Spremeni nadrejeno mapo
+  folder: Mapa
+  create_a_new_folder: Ustvari novo mapo
+  exit_preview: Izhod iz predogleda
+  general: Splošno
+  recipients: Prejemniki
+  form_preferences: Nastavitve obrazca
+  redirect_on_completion_url: URL preusmeritve ob dokončanju
+  completion_message: Sporočilo ob dokončanju
+  email_subject: Zadeva e-pošte
+  email_body: Vsebina e-pošte
+  attach_audit_log_pdf_to_the_email: Priloži revizijski dnevnik PDF k e-pošti
+  send_emails_automatically_on_completion: Samodejno pošlji e-pošte ob dokončanju
+  attach_documents_to_the_email: Priloži dokumente k e-pošti
+  not_specified: Ni navedeno
+  submission_requester: Zahtevalec oddaje
+  specified_email: Navedena e-pošta
+  invite_by_name: 'Povabi po %{name}'
+  invite_via_form_field: Povabi prek polja obrazca
+  same_as_name: 'Enako kot %{name}'
+  default_email: Privzeta e-pošta
+  processing: Obdelava
+  upload_initials: Naloži inicialke
+  draw: Nariši
+  upload_signature: Naloži podpis
+  integration: Integracija
+  admin: Skrbnik
+  tenant_admin: Skrbnik najemnika
+  editor: Urednik
+  viewer: Ogledovalec
+  member: Član
+  agent: Agent
+  superadmin: Superadmin
+  edit_user: Uredi uporabnika
+  new_user: Nov uporabnik
+  unarchive: Dearhiviraj
+  last_session: Zadnja seja
+  unlock_more_user_roles_with_docuseal_pro: Odkleni več vlog uporabnikov z DocuSeal Pro.
+  view_active: Ogled aktivnih
+  team_account: Račun ekipe
+  team_accounts: Računi ekip
+  tenant_account: Račun najemnika
+  tenant_accounts: Računi najemnikov
+  impersonate: Imitiraj
+  loading: Nalaganje
+  documents: Dokumenti
+  accounts: Računi
+  edit_account: Uredi račun
+  new_team: Nova ekipa
+  new_tenant: Nov najemnik
+  remove_team: Odstrani ekipo
+  remove_tenant: Odstrani najemnika
+  replace: Zamenjaj
+  allow_tenant_admins_to_invite_new_users: Dovoli skrbnikom najemnikov vabiti nove uporabnike
+  manage_multiple_teams: Upravljaj več ekip
+  api_key: API ključ
+  logo: Logotip
+  back: Nazaj
+  add_secret: Dodaj skrivnost
+  edit_secret: Uredi skrivnost
+  submission_example_payload: Primer tovora oddaje
+  there_are_no_signatures: Ni podpisov
+  signed_with_trusted_certificate: Podpisano z zaupanja vrednim potrdilom
+  signed_with_external_certificate: Podpisano z zunanjim potrdilom
+  setup_2fa_to_continue: Nastavite 2FA za nadaljevanje.
+  create_a_new_account: Ustvari nov račun.
+  you_are_already_signed_in: Že ste prijavljeni.
+  please_sign_in: Prosimo, prijavite se.
+  not_found: Ni najdeno
+  new_recipients_have_been_added: Novi prejemniki so dodani.
+  submission_has_been_removed: Oddaja je odstranjena.
+  submission_has_been_archived: Oddaja je arhivirana.
+  form_has_been_completed_already: Obrazec je že dokončan.
+  form_has_been_archived: Obrazec je arhiviran.
+  form_has_been_expired: Obrazec je potekel.
+  form_has_been_declined: Obrazec je zavrnjen.
+  file_is_missing: Datoteka manjka
+  folder_name_has_been_updated: Ime mape je posodobljeno.
+  unable_to_rename_folder: Ni mogoče preimenovati mape.
+  template_has_been_removed: Predloga je odstranjena.
+  template_has_been_archived: Predloga je arhivirana.
+  template_has_been_cloned: Predloga je klonirana.
+  document_template_has_been_moved: Dokumentna predloga je premaknjena.
+  unable_to_move_template_into_folder: Ni mogoče premakniti predloge v mapo.
+  template_has_been_unarchived: Predloga je de-arhivirana.
+  submission_has_been_unarchived: Oddaja je de-arhivirana.
+  unable_to_update_file: Ni mogoče naložiti datoteke.
+  user_has_been_invited: Uporabnik je povabljen.
+  unable_to_update_user: Ni mogoče posodobiti uporabnika.
+  user_has_been_updated: Uporabnik je posodobljen.
+  unable_to_remove_user: Ni mogoče odstraniti uporabnika.
+  user_has_been_removed: Uporabnik je odstranjen.
+  invalid_pdf: Neveljaven PDF
+  webhook_secret_has_been_saved: Webhook skrivnost je shranjena.
+  webhook_url_has_been_saved: Webhook URL je shranjen.
+  webhook_request_has_been_sent: Webhook zahteva je poslana.
+  webhook_url_has_been_updated: Webhook URL je posodobljen.
+  webhook_url_has_been_deleted: Webhook URL je izbrisan.
+  unable_to_resend_webhook_request: Ni mogoče ponovno poslati webhook zahteve.
+  new_webhook: Nov webhook
+  delete_webhook: Izbriši webhook
+  count_submissions_have_been_created: '%{count} oddaj je ustvarjenih.'
+  sms_length_cant_be_longer_than_120_bytes: Dolžina SMS ne sme presegati 120 bajtov
+  connected_successfully: Uspešno povezano.
+  user_nameid_not_found: 'Uporabnik %{nameid} ni najden.'
+  sso_settings_have_been_updated: SSO nastavitve so posodobljene.
+  sms_has_been_sent: SMS je poslan.
+  account_has_been_created: Račun je ustvarjen.
+  account_has_been_updated: Račun je posodobljen.
+  account_has_been_removed: Račun je odstranjen.
+  logo_has_been_uploaded: Logotip je naložen.
+  invalid_file_type: Neveljavna vrsta datoteke
+  upload_file: Naloži datoteko
+  upgrade_your_plan_to_invite_more_users_contact_email: 'Nadgradite načrt za vabilo več uporabnikov (kontakt %{email}).'
+  contact_your_admin_email_to_invite_more_users: 'Kontaktirajte skrbnika %{email} za vabilo več uporabnikov.'
+  contact_your_administrator_to_add_new_users: Kontaktirajte administratorja za dodajanje novih uporabnikov
+  one_hour: 1 ura
+  two_hours: 2 uri
+  four_hours: 4 ure
+  eight_hours: 8 ur
+  twelve_hours: 12 ur
+  twenty_four_hours: 24 ur
+  two_days: 2 dneva
+  four_days: 4 dni
+  eight_days: 8 dni
+  fifteen_days: 15 dni
+  twenty_one_days: 21 dni
+  thirty_days: 30 dni
+  free: Brezplačno
+  unlimited_documents_storage: Neomejeno shranjevanje dokumentov
+  users_management: Upravljanje uporabnikov
+  ten_field_types: 10 vrst polj
+  multiple_signers: Več podpisnikov
+  automatic_esignature: Samodejni e-podpis
+  ten_signature_request_emails_per_month: 10 e-pošt zahtev po podpisu na mesec
+  unlimited_sign_yourself: Neomejeno podpisovanje zase
+  free_developer_testing_sandbox: Brezplačen peskovnik za razvijalce
+  continue_with_free_basic: Nadaljuj z brezplačnim osnovnim
+  unlimited_signature_request_emails: Neomejeno e-pošt zahtev po podpisu
+  your_company_logo: Logotip vašega podjetja
+  connect_own_email_address: Poveži lasten e-naslov
+  personalize_email_content: Prilagodi vsebino e-pošte
+  automated_reminders: Samodejni opomniki
+  bulk_send_from_spreadsheet: Masovno pošiljanje iz preglednice
+  identify_verification_via_sms: Preverjanje identitete prek SMS
+  start_with_pro: Začni s Pro
+  user_month: uporabnik / mesec
+  developer_sandbox: Peskovnik za razvijalce.
+  upgrade_to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Nadgradi</a>, da začneš uporabljati v produkciji.'
+  download_combined_pdf: Prenesi združen PDF
+  audit_log: Revizijski dnevnik
+  signers: Podpisniki
+  not_invited_yet:  Še ni povabljen
+  not_completed_yet: Še ni dokončano
+  declined_on_time: 'Zavrnjeno dne %{time}'
+  expire_on_time: 'Poteče dne %{time}'
+  sign_in_person: Podpiši osebno
+  create_a_new_template_document_form_or_submit_the_existing_one_html: <a href="%{new_template_link}" data-turbo-frame="modal" class="inline underline font-medium">Ustvari novo predlogo</a> dokumentnega obrazca ali <a href="%{start_form_link}" target="_blank" class="inline underline font-medium">oddaj obstoječega</a>
+  send_email_copy_with_completed_documents_to_a_specified_bcc_address: Pošlji kopijo e-pošte z dokončanimi dokumenti na naveden BCC naslov.
+  re_send_email: Ponovno pošlji e-pošto
+  send_email: Pošlji e-pošto
+  copy_share_link: Kopiraj povezavo za deljenje
+  copied_to_clipboard: Kopirano v odložišče
+  link: Povezava
+  via_email: prek e-pošte
+  via_phone: prek telefona
+  detailed: Podrobno
+  upload_list: Naloži seznam
+  creating: Ustvarjanje
+  open_source_documents_software: programska oprema za dokumente odprte kode
+  copy_link: Kopiraj povezavo
+  opened: Odprto
+  sent: Poslano
+  awaiting: Čakanje
+  document_id: ID dokumenta
+  envelope_id: ID ovojnice
+  event_log: Dnevnik dogodkov
+  verify: Preveri
+  testing_log_not_for_production_use: Testni dnevnik – Ni za produkcijsko uporabo
+  original_sha256: Originalni SHA256
+  result_sha256: Rezultat SHA256
+  generated_at: Generirano ob
+  email_verification: Preverjanje e-pošte
+  phone_verification: Preverjanje telefona
+  session_id: ID seje
+  option: Možnost
+  text_field: Besedilno polje
+  signature_field: Polje za podpis
+  initials_field: Polje za inicialke
+  date_field: Datumsko polje
+  number_field: Številsko polje
+  image_field: Slika polje
+  file_field: Polje za datoteko
+  select_field: Izbirno polje
+  checkbox_field: Potrditveno polje
+  multiple_field: Večkratna izbira polje
+  radio_field: Radijsko skupinsko polje
+  cells_field: Celice polje
+  stamp_field: Žig polje
+  payment_field: Plačilno polje
+  phone_field: Telefonsko polje
+  verification_field: Preverjanje identitete
+  knowledge_based_authentication: Preverjanje na podlagi znanja
+  kba_field: KBA
+  passed: Uspešno
+  identity_verification: Preverjanje identitete
+  paid_price: 'Plačano %{price}'
+  verified: Preverjeno
+  unverified: Nepreverjeno
+  document: Dokument
+  completed_at: Dokončano ob
+  edit_recipient: Uredi prejemnika
+  update_recipient: Posodobi prejemnika
+  use_international_format_1xxx_: 'Uporabi mednarodno obliko: +1xxx...'
+  submitter_cannot_be_updated: Podpisnika ni mogoče posodobiti.
+  at_least_one_field_must_be_filled: Vsaj eno polje mora biti izpolnjeno.
+  archived_users: Arhivirani uporabniki
+  embedding_users: Vdelani uporabniki
+  view_embedding_users: Ogled vdelanih uporabnikov
+  key: Ključ
+  value: Vrednost
+  webhook_secret: Webhook skrivnost
+  author: Avtor
+  to: Za
+  created_at: Ustvarjeno ob
+  apply: Uporabi
+  applying: Uporaba
+  today: Danes
+  yesterday: Včeraj
+  this_week: Ta teden
+  last_week: Prejšnji teden
+  this_month: Ta mesec
+  last_month: Prejšnji mesec
+  this_year: Letos
+  policy_links: Povezave do politik
+  markdown_content_e_g: Vsebina v Markdownu, npr.
+  privacy_policy: Politika zasebnosti
+  the_code_has_been_sent_to_your_email: Koda je bila poslana na vaš e-naslov.
+  enter_the_verification_code_from_your_email: Vnesite potrditveno kodo iz e-pošte.
+  too_many_attempts: Preveč poskusov.
+  verification_code: Potrditvena koda
+  resend_code: Ponovno pošlji kodo
+  verify_new_sign_in: Preveri novo prijavo
+  use_otp_code_to_sign_in_or_click_the_link_below_html: 'Uporabite kodo <b>%{code}</b> za prijavo ali kliknite spodnjo povezavo:'
+  complete_sign_in: Dokončaj prijavo
+  please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Če ne prepoznate tega poskusa prijave, odgovorite na to e-pošto.
+  docuseal_support: DocuSeal podpora
+  use_the_edit_form_to_move_it_to_another_team: Uporabite obrazec za urejanje, da ga premaknete v drugo ekipo.
+  too_many_sms_attempts_try_again_in_a_few_seconds: Preveč poskusov SMS. Poskusite znova čez nekaj sekund.
+  number_phone_number_is_invalid: "+%{number} telefonska številka je neveljavna"
+  make_com_integration: Make.com integracija
+  zapier_integration: Zapier integracija
+  seamlessly_automate_your_document_signing_process_with_make_com: Brezhibno avtomatizirajte proces podpisovanja dokumentov z Make.com.
+  find_suitable_zapier_templates_to_automate_your_workflow: Poiščite primerne Zapier predloge za avtomatizacijo delovnega toka.
+  get_started: Začni
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Kliknite tukaj</a> za več o vlogah in dovoljenjih uporabnikov.'
+  count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-pošt zahtev po podpisu poslanih ta mesec. Nadgradite na Pro za neomejeno pošiljanje.'
+  test_mode_emails_limit_will_be_reset_within_24_hours: Omejitev e-pošt v testnem načinu se ponastavi v 24 urah.
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: Na lestvici od 1 do 10, kako zadovoljni ste z izdelkom DocuSeal?
+  tell_us_more_about_your_experience: Povejte nam več o vaši izkušnji
+  extremely_dissatisfied: Zelo nezadovoljen
+  extremely_satisfied: Zelo zadovoljen
+  your_pro_plan_payment_is_overdue: Plačilo za Pro načrt je zapadlo.
+  click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: <a href="%{url}" class="link">Kliknite tukaj</a> za posodobitev plačilnih podatkov in poravnavo računa za nemoteno uporabo.
+  overdue_payment: Zapadlo plačilo
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Pro načrt je suspendiran zaradi neplačanih računov. Posodobite plačilne podatke za poravnavo ali prekličite naročnino.
+  manage_subscription: Upravljaj naročnino
+  submission_created_by_email_html: '<b>Oddaja ustvarjena</b> s strani %{email}'
+  submission_created_by_email_via_source_html: '<b>Oddaja ustvarjena</b> s strani %{email} prek %{source}'
+  submission_created_via_source_html: '<b>Oddaja ustvarjena</b> prek %{source}'
+  pro_user_seats_used: Porabljeni Pro sedeži
+  manage_plan: Upravljaj načrt
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: Ta oddaja ima več podpisnikov, kar preprečuje uporabo skupne povezave. Za rešitev sledite temu <a href="https://www.docuseal.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">vodniku</a> za določitev privzetih podpisnikov.
+  welcome_to_docuseal: Dobrodošli v DocuSeal
+  start_a_quick_tour_to_learn_how_to_create_and_send_your_first_document: Začnite hiter ogled, kako ustvariti in poslati prvi dokument
+  start_tour: Začni ogled
+  name_a_z: Ime A-Ž
+  recently_used: Nazadnje uporabljeno
+  newest_first: Najnovejše najprej
+  none: Brez
+  default_expiration: Privzeta veljavnost
+  specified_date: Navedeni datum
+  one_day: 1 dan
+  two_days: 2 dneva
+  three_days: 3 dni
+  four_days: 4 dni
+  five_days: 5 dni
+  six_days: 6 dni
+  seven_days: 7 dni
+  eight_days: 8 dni
+  nine_days: 9 dni
+  ten_days: 10 dni
+  two_weeks: 2 tedna
+  three_weeks: 3 tedne
+  four_weeks: 4 tedne
+  one_month: 1 mesec
+  two_months: 2 meseca
+  three_months: 3 mesece
+  eu_data_residency: Rezidenčnost podatkov v EU
+  please_enter_your_email_address_associated_with_the_completed_submission: Vnesite e-naslov, povezan z dokončano oddajo.
+  esignature_disclosure: Razkritje elektronskega podpisa
+  share_link: Deli povezavo
+  enable_shared_link: Omogoči skupno povezavo
+  share_link_is_currently_disabled: Skupna povezava je trenutno onemogočena
+  select_data_residency: Izberi rezidenčnost podatkov
+  account_name_has_invited_you_to_fill_and_sign_documents_online_effortlessly_with_a_secure_fast_and_user_friendly_digital_document_signing_solution: '%{account_name} vas vabi k izpolnjevanju in podpisovanju dokumentov na spletu brez napora z varno, hitro in uporabniku prijazno rešitvijo digitalnega podpisovanja.'
+  review_or_download_completed_documents_fill_and_sign_documents_online_effortlessly_with_a_secure_fast_and_user_friendly_digital_document_signing_solution: Preglejte ali prenesite dokončane dokumente. Izpolnite in podpišite dokumente na spletu brez napora z varno, hitro in uporabniku prijazno rešitvijo.
+  link_form_fields: Poveži polja obrazca
+  at_least_one_field_must_be_displayed_in_the_form: Vsaj eno polje mora biti prikazano v obrazcu.
+  this_template_has_multiple_parties_which_prevents_the_use_of_a_sharing_link: Ta predloga ima več strank, kar preprečuje uporabo skupne povezave. Za rešitev določite privzete podrobnosti strank.
+  events_log: Dnevnik dogodkov
+  succeeded: Uspešno
+  failed: Neuspešno
+  there_are_no_events: Ni dogodkov
+  resend: Ponovno pošlji
+  next_attempt_in_time_in_words: Naslednji poskus čez %{time_in_words}
+  request_email_otp_verification_with_shared_link: Zahtevaj e-poštno OTP preverjanje s skupno povezavo
+  sms_rate_limit_exceeded: Presežena omejitev hitrosti SMS
+  invalid_phone_number: Neveljavna telefonska številka
+  please_contact_the_requester_to_specify_your_phone_number_for_two_factor_authentication: Kontaktirajte zahtevalca, da navede vašo telefonsko številko za dvofaktorsko overjanje.
+  we_sent_a_one_time_verification_code_to_your_email_address_please_enter_the_code_below_to_continue: Poslali smo enkratno potrditveno kodo na vaš e-naslov. Vnesite kodo spodaj za nadaljevanje.
+  re_send_code: Ponovno pošlji kodo
+  email_verification: Preverjanje e-pošte
+  your_verification_code_to_access_the_name: 'Vaša potrditvena koda za dostop do "%{name}":'
+  please_reply_to_this_email_if_you_didnt_request_this: Če niste zahtevali tega, odgovorite na to e-pošto.
+  advanced_settings: Napredne nastavitve
+  text: Besedilo
+  code: Koda
+  custom_html_emails: Po meri HTML e-pošte
+  connect_your_email_to_send_html_emails: Povežite e-pošto za pošiljanje HTML e-pošt
+  connect_your_email_or_outlook_account_or_add_smtp_settings_to_send_custom_html_emails: Povežite Gmail ali Outlook ali dodajte SMTP nastavitve za pošiljanje po meri HTML e-pošt.
+  connect_gmail_or_outlook: Poveži Gmail ali Outlook
+  connect_your_email_to_bulk_send: Poveži e-pošto za masovno pošiljanje
+  connect_your_email_or_outlook_account_or_add_smtp_settings_to_bulk_send: Povežite Gmail ali Outlook ali dodajte SMTP za masovno pošiljanje.
+  are_you_sure_you_want_to_add_recipients_without_sending_to_send_emails_it_requires_to_connect_gmail_or_outlook: Ste prepričani, da želite dodati prejemnike brez pošiljanja? Za pošiljanje e-pošt je potrebna povezava Gmail ali Outlook.
+  template_name_has_been_completed_by_submitters_html: '"<strong>{template.name}</strong>" je dokončal <strong>{submission.submitters}</strong>'
+  please_check_the_copy_of_your_template_name_in_the_email_attachments_html: 'Prosimo preverite kopijo vašega "<strong>{template.name}</strong>" v prilogah e-pošte.'
+  you_have_been_invited_to_sign_the_template_name_html: 'Povabljeni ste k podpisu "<strong>{template.name}</strong>".'
+  reveal_api_key: Razkrij API ključ
+  enter_your_password_to_reveal_the_api_key: Vnesite geslo za razkritje API ključa
+  wrong_password: Napačno geslo.
+  current_password: Trenutno geslo
+  dont_remember_your_current_password_click_here_to_reset_it_html: 'Ne spomnite se trenutnega gesla? <label class="link" for="resend_password_button">Kliknite tukaj</label> za ponastavitev.'
+  an_email_with_password_reset_instructions_has_been_sent: E-pošta s navodili za ponastavitev gesla je bila poslana.
+  api_key_access_code: Koda za dostop do API ključa
+  use_otp_code_to_access_the_api_key_html: Uporabite kodo <b>%{code}</b> za dostop do API ključa.
+  please_reply_to_this_email_if_you_dont_recognize_this_request: Če ne prepoznate te zahteve, odgovorite na to e-pošto.
+  your_user_account_has_been_archived_contact_your_administrator_to_restore_access_to_your_account: Vaš uporabniški račun je arhiviran. Kontaktirajte administratorja za obnovitev dostopa.
+  your_email_could_not_be_reached_this_may_happen_if_there_was_a_typo_in_your_address_or_if_your_mailbox_is_not_available_please_contact_support_email_to_log_in: Vašega e-naslova ni bilo mogoče doseči. Morda je prišlo do tipkarske napake ali pa nabiralnik ni na voljo. Kontaktirajte support@docuseal.com za prijavo.
+  efficient_search_with_search_index: Učinkovito iskanje z indeksom iskanja
+  reindex: Ponovno indeksiraj
+  build_search_index: Zgradi indeks iskanja
+  require_two_factor_authentication_2fa_with_an_authenticator_app_e_g_google_authenticator_authy_all_users_signing_documents_must_pass_the_second_factor_verification_using_a_secure_code_in_addition_to_their_password: Zahtevaj dvofaktorsko overjanje (2FA) z aplikacijo za overjanje (npr. Google Authenticator, Authy). Vsi podpisniki morajo opraviti drugo stopnjo preverjanja z varno kodo poleg gesla.
+  add_a_unique_signature_id_and_timestamp_to_each_signature_for_audit_and_traceability_purposes_along_with_the_timestamp_part_of_docuseals_21_cfr_part_11_compliance_settings: "Dodaj unikatni ID podpisa in časovni žig k vsakemu podpisu za revizijo in sledljivost. Del nastavitev skladnosti DocuSeal z 21 CFR Part 11."
+  require_signer_to_provide_a_reason_for_signing_before_completing_their_signature_e_g_approvals_certifications_part_of_docuseals_21_cfr_part_11_compliance_settings: "Zahtevaj od podpisnika razlog za podpis pred dokončanjem (npr. odobritve, certifikacije). Del skladnosti DocuSeal z 21 CFR Part 11."
+  allow_signers_to_create_signatures_by_typing_their_name_instead_of_drawing_or_uploading_one: Dovoli podpisnikom ustvarjanje podpisov z vtipkanim imenom namesto risanja ali nalaganja.
+  allow_signers_to_resubmit_forms_after_completion_useful_when_corrections_or_multiple_submissions_are_needed: Dovoli podpisnikom ponovno oddajo obrazcev po dokončanju – uporabno za popravke ali več oddaj.
+  allow_recipients_to_decline_signing_a_document_the_decline_reason_notification_will_be_sent_to_the_signature_requester: Dovoli prejemnikom zavrnitev podpisa dokumenta. Obvestilo z razlogom bo poslano zahtevalcu podpisa.
+  allow_recipients_to_delegate_documents: Dovoli prejemnikom delegiranje dokumentov drugi osebi prek e-pošte. To je uporabno, ko mora prvotni prejemnik dokument predati pooblaščenemu podpisniku.
+  allow_to_delegate_documents: Dovoli delegiranje dokumentov
+  save_a_users_signature_and_automatically_pre_fill_it_in_future_signing_sessions: "Shrani podpis uporabnika in ga samodejno predizpolni v prihodnjih sejah podpisovanja."
+  make_document_download_links_expire_after_40_minutes_to_prevent_long_term_access_and_enhance_security: Povezave za prenos dokumentov potečejo po 40 minutah za boljšo varnost.
+  require_authentication_with_user_login_or_api_key_to_access_the_document_download_links: Zahtevaj overjanje z uporabniško prijavo ali API ključem za dostop do povezav prenosa.
+  combine_signed_documents_and_the_audit_log_into_a_single_pdf_file_for_easier_recordkeeping_and_compliance: Združi podpisane dokumente in revizijski dnevnik v eno PDF datoteko za lažje vodenje evidenc in skladnost.
+  require_a_jwt_authorization_to_preview_embedded_forms_ensuring_only_authorized_users_can_view_them: Zahtevaj JWT avtorizacijo za predogled vdelanih obrazcev – samo pooblaščeni uporabniki jih lahko vidijo.
+  make_all_newly_created_templates_private_to_their_creator_by_default: Naj bodo vse novo ustvarjene predloge privzeto zasebne za ustvarjalca.
+  make_the_recipients_signing_order_always_enforced_so_that_the_second_signer_can_start_signing_their_part_only_after_the_first_signer_has_completed_signing: Vedno vsili vrstni red podpisnikov, da drugi podpisnik lahko začne šele po prvem.
+  the_file_is_missing_make_sure_you_have_access_to_it_on_google_drive: Datoteka manjka. Preverite dostop do nje v Google Drive.
+  connect_google_drive: Poveži Google Drive
+  google_drive_has_been_connected: Google Drive je povezan
+  unable_to_identify_reset_your_password_to_sign_in: Ni mogoče prepoznati. Ponastavite geslo za prijavo.
+  desktop: Namizje
+  mobile: Mobilno
+  tablet: Tablica
+  delegate: Delegiraj
+  enter_the_email_address_of_the_person_you_want_to_delegate_to: Vnesite e-poštni naslov osebe, na katero želite delegirati.
+  document_has_been_delegated_on_html: 'Dokument je bil delegiran <span class="font-semibold">%{time}</span>'
+  dynamic_template_with_variables_cannot_be_used_via_shared_link: Dinamične predloge s spremenljivkami ni mogoče uporabiti prek skupne povezave.
+  re_send_emails: Ponovno pošlji e-pošte
+  are_you_sure_you_want_to_re_send_email_to_n_recipients: Ali ste prepričani, da želite ponovno poslati vabilo po e-pošti %{count} prejemnikom?
+  emails_have_been_sent_to_n_recipients: E-pošte so bile poslane %{count} prejemnikom.
+  qr_code: QR koda
+  print: Natisni
+  scan_the_qr_code_above_with_your_phone_camera_to_open_and_sign_this_document: S kamero telefona skenirajte zgornjo QR kodo, da odprete in podpišete ta dokument.
+  security: Varnost
+  webhook_security: Varnost webhooka
+  secret: Skrivnost
+  hmac: HMAC
+  hmac_signing_secret: HMAC podpisna skrivnost
+  hmac_signature_header_hint_html: 'Vsaka zahteva je podpisana z glavo %{header}: &lt;timestamp&gt;.&lt;sha256&gt;.'
+  page: Stran
+  open_file_from: 'Odpri datoteko iz'
+  open: Odpri
+  cancel: Prekliči
+  your_email_address_has_been_changed: Vaš e-poštni naslov je bil spremenjen.
+  the_email_address_for_your_account_has_been_changed_to_new_email: E-poštni naslov vašega računa je bil spremenjen v %{new_email}.
+  if_you_did_not_make_this_change_please_contact_us_by_replying_to_this_email: Če te spremembe niste naredili vi, nas kontaktirajte z odgovorom na to e-pošto.
+  your_email_address_has_been_released_immediately_you_can_now_be_added_to_your_company_team_without_waiting_for_the_deletion_period_to_end: Vaš e-poštni naslov je bil takoj sproščen. Če se pridružujete ekipi, vas je zdaj mogoče dodati v ekipo podjetja brez čakanja na iztek obdobja izbrisa.
+  reset_default: Ponastavi privzeto
+  send_signature_request_email: Pošlji e-pošto zahteve po podpisu
+  last_3_months: Zadnji 3 meseci
+  last_6_months: Zadnjih 6 mesecev
+  last_year: Zadnje leto
+  all_time: Ves čas
+  everyone: Vsi
+  daily: Dnevno
+  weekly: Tedensko
+  monthly: Mesečno
+  api: API
+  embed: Vdelava
+  bulk: Masovno
+  invite: Povabi
+  api_and_embed: API in vdelava
+  period: Obdobje
+  reports: Poročila
+  completed_submissions: Dokončane oddaje
+  sms: SMS
+  require_email_2fa_to_open: Za odprtje zahtevaj e-poštno 2FA
+  verification_required_refresh_the_page_and_pass_2fa: Potrebno preverjanje, osvežite stran in opravite 2FA.
+  the_sender_has_requested_a_two_factor_authentication_via_one_time_password_sent_to_your_email_html: Pošiljatelj je zahteval dvofaktorsko overjanje prek enkratnega gesla, poslanega na vaš <b>%{email}</b> e-naslov.
+  please_contact_the_requester_to_specify_your_email_for_two_factor_authentication: Kontaktirajte zahtevalca, da navede vaš e-naslov za dvofaktorsko overjanje.
+  rate_limit_exceeded: Presežena omejitev hitrosti
+  a_confirmation_email_has_been_sent_to_the_new_email_address: Potrditvena e-pošta je poslana na nov e-naslov.
+  email_address_is_awaiting_confirmation_follow_the_link_in_the_email_to_confirm: "%{email} e-naslov čaka na potrditev. Sledite povezavi v e-pošti za potrditev."
+  please_confirm_your_email_address_using_the_link_below_: 'Prosimo potrdite e-naslov prek spodnje povezave:'
+  confirm_email: Potrdi e-pošto
+  please_verify_your_email_address_to_continue: Prosimo preverite e-naslov za nadaljevanje.
+  verification_code_sent_click_link_or_enter_code: Potrditvena koda je poslana na e-pošto. Kliknite povezavo v e-pošti ali vnesite enkratno kodo za potrditev.
+  use_otp_code_to_verify_email_or_click_link_below_html: 'Uporabite kodo <b>%{code}</b> za preverjanje e-pošte ali kliknite spodnjo povezavo:'
+  verify_your_email: Preveri e-pošto
+  your_email_has_been_confirmed: Vaš e-naslov je potrjen.
+  invalid_or_expired_verification_code: Neveljavna ali potekla potrditvena koda.
+  didnt_receive_an_email: Niste prejeli e-pošte?
+  unconfirmed: Nepotrjeno
+  you_requested_to_reset_your_password_use_the_link_below_to_continue: Zahtevali ste ponastavitev gesla. Uporabite spodnjo povezavo za nadaljevanje
+  if_you_didnt_request_this_you_can_ignore_this_email: "Če niste zahtevali tega, lahko to e-pošto ignorirate."
+  your_password_wont_change_until_you_open_the_link_above_and_set_a_new_one: "Vaše geslo se ne bo spremenilo, dokler ne odprete zgornje povezave in nastavite novega."
+  too_many_requests_try_again_later: Preveč zahtev, poskusite znova kasneje.
+  bold: Krepko
+  italic: Ležeče
+  underline: Podčrtano
+  undo: Razveljavi
+  redo: Ponovi
+  add_variable: Dodaj spremenljivko
+  enter_a_url_or_variable_name: Vnesite URL ali ime spremenljivke
+  new_token: Nov žeton
+  token: Žeton
+  mcp_server: MCP strežnik
+  instructions: Navodila
+  please_copy_the_token_below_now_as_it_wont_be_shown_again: Prosimo kopirajte spodnji žeton zdaj, saj ga ne bomo več prikazali
+  mcp_token_has_been_created: MCP žeton je ustvarjen.
+  mcp_token_has_been_removed: MCP žeton je odstranjen.
+  enable_mcp_server: Omogoči MCP strežnik
+  all_existing_mcp_connections_will_be_stopped_immediately_when_this_setting_is_disabled: Vse obstoječe MCP povezave se bodo takoj ustavile, ko bo ta nastavitev onemogočena.
+  connect_to_docuseal_mcp: Poveži se z DocuSeal MCP
+  add_the_following_to_your_mcp_client_configuration: Dodajte naslednje v konfiguracijo vašega MCP odjemalca
+  works_with_claude_desktop_cursor_windsurf_vs_code_and_any_mcp_compatible_client: Deluje z Claude Desktop, Cursor, Windsurf, VS Code in vsakim MCP-kompatibilnim odjemalcem.
+  devise:
+    confirmations:
+      confirmed: Vaš e-naslov je bil uspešno potrjen.
+    failure:
+      unconfirmed: Pred nadaljevanjem morate potrditi e-naslov.
+    mailer:
+      confirmation_instructions:
+        subject: Potrdi e-naslov
+  submission_sources:
+    api: API
+    bulk: Masovno pošiljanje
+    embed: Vdelava
+    invite: Povabilo
+    link: Povezava
+    mcp: MCP
+  submission_event_names:
+    send_email_to_html: '<b>E-pošta poslana</b> na %{submitter_name}'
+    bounce_email_html: '<b>E-pošta odbita</b> %{submitter_name}'
+    complaint_email_html: '<b>Pritožba zaradi spam</b> %{submitter_name}'
+    send_reminder_email_to_html: '<b>Opomnik e-pošte poslan</b> na %{submitter_name}'
+    send_sms_to_html: '<b>SMS poslan</b> na %{submitter_name}'
+    send_2fa_sms_to_html: '<b>Potrditveni SMS poslan</b> na %{submitter_name}'
+    send_2fa_email_to_html: '<b>Potrditvena e-pošta poslana</b> na %{submitter_name}'
+    open_email_by_html: '<b>E-pošta odprta</b> s strani %{submitter_name}'
+    click_email_by_html: '<b>Povezava v e-pošti kliknjena</b> s strani %{submitter_name}'
+    click_sms_by_html: '<b>Povezava v SMS kliknjena</b> s strani %{submitter_name}'
+    phone_verified_by_html: '<b>Telefon preverjen</b> s strani %{submitter_name}'
+    email_verified_by_html: '<b>E-pošta preverjena</b> s strani %{submitter_name}'
+    start_form_by_html: '<b>Oddaja začeta</b> s strani %{submitter_name}'
+    view_form_by_html: '<b>Obrazec ogledan</b> s strani %{submitter_name}'
+    invite_party_by_html: '<b>Povabljen</b> %{invited_submitter_name} s strani %{submitter_name}'
+    complete_form_by_html: '<b>Oddaja dokončana</b> s strani %{submitter_name}'
+    decline_form_by_html: '<b>Obrazec zavrnjen</b> s strani %{submitter_name}'
+    delegate_form_by_html: '<b>Delegirano</b> od %{from} do %{to}'
+    start_verification_by_html: '<b>Preverjanje identitete začeto</b> s strani %{submitter_name}'
+    complete_verification_by_html: '<b>Preverjanje identitete dokončano</b> s strani %{submitter_name} z %{provider}'
+    start_kba_by_html: '<b>KBA začeto</b> s strani %{submitter_name}'
+    complete_kba_by_html: '<b>KBA dokončano</b> s strani %{submitter_name}'
+    fail_kba_by_html: '<b>KBA neuspešno</b> s strani %{submitter_name}'
+    api_complete_form_by_html: '<b>Oddaja dokončana prek API</b> s strani %{submitter_name}'
+  import_list:
+    select_worksheet: Izberi delovni list
+    open: Odpri
+    remove: Odstrani
+    recipient_field: Polje prejemnika
+    spreadsheet_column: Stolpec preglednice
+    select_field: Izberi polje
+    select_column: Izberi stolpec
+    new_field_mapping: Novo preslikavanje polja
+    total_entries: Skupno vnosov
+    upload_csv_or_xlsx_spreadsheet: Naloži CSV ali XLSX preglednico
+    click_to_upload: Klikni za nalaganje
+    or_drag_and_drop_files: ali povleci in spusti datoteke.
+    or: Ali
+    download: prenesi
+    a_sample_spreadsheet_to_fill_and_import: vzorčno preglednico za izpolnitev in uvoz
+  app_tour:
+    start: Začni
+    previous: Prejšnji
+    next: Naslednji
+    template_and_submissions: 'Predloge in oddaje'
+    template_and_submissions_description: "Izberete lahko pogled, ki najbolj ustreza vašemu delovnemu toku. Izberite 'Predloge' za ustvarjanje ponovno uporabnih predlog ali 'Oddaje' za podpis posameznih dokumentov ali pregled statusa zahtev."
+    upload_a_pdf_file: 'Naloži PDF datoteko'
+    upload_a_pdf_file_description: 'Naložite PDF dokument za ustvarjanje predloge obrazca za podpisovanje.'
+    select_a_signer_party: 'Izberi podpisno stranko'
+    select_a_signer_party_description: 'Ta spustni meni omogoča izbiro vloge podpisne stranke ali dodajanje nove stranke, če dokument zahteva 2 ali več podpisov.'
+    available_parties: 'Razpoložljive stranke'
+    available_parties_description: 'Seznam vseh razpoložljivih strank z imeni vlog. Po izbiri lahko dodate in konfigurirate polja za izbrano stranko.'
+    available_field_types: 'Razpoložljive vrste polj'
+    available_field_types_description: 'Ta del vsebuje vse vrste polj, ki jih lahko dodate v dokument za vnos podatkov ali zbiranje podpisov.'
+    text_input_field: 'Besedilno vnosno polje'
+    text_input_field_description: 'To polje omogoča vnos besedilnih informacij, kot so imena ali e-naslovi.'
+    signature_field: 'Polje za podpis'
+    signature_field_description: 'To polje služi za zbiranje podpisov podpisnikov.'
+    added_fields: 'Dodana polja'
+    added_fields_description: 'Seznam vseh dodanih polj v dokument. Lahko jih prerazporedite, urejate ali odstranite.'
+    open_field_settings: 'Odpri nastavitve polja'
+    open_field_settings_description: 'Desno poleg imena polja je ikona nastavitev, ki odpre nastavitve polja.'
+    field_settings: 'Nastavitve polja'
+    field_settings_description: 'Vsako polje lahko prilagodite – velikost pisave, obvezno polje, opis ipd.'
+    send_document: 'Pošlji dokument v podpis'
+    send_document_description: 'Pred pošiljanjem lahko konfigurirate prejemnike, dodate e-naslove ali telefone in prilagodite vsebino e-pošte.'
+    sign_yourself: 'Podpiši dokument sam'
+    sign_yourself_description: 'Ta gumb omogoča dodajanje vašega podpisa v dokumente, ki zahtevajo vaš podpis.'
+    copy_and_share_link: 'Kopiraj in deli povezavo'
+    copy_and_share_link_description: 'Kopirajte to povezavo za deljenje dokumenta. Vsakdo s povezavo lahko podpiše po vnosu e-naslova.'
+    sign_the_document: 'Podpiši dokument'
+    sign_the_document_description: 'Če ste eden od podpisnikov, ta gumb omogoča podpis dokumenta.'
+    send_for_signing: 'Pošlji v podpis'
+    add_recipients: 'Dodaj prejemnike'
+    add_recipients_description: 'Dodajte nove prejemnike z vnosom e-naslovov ali telefonskih številk.'
+    settings: 'Nastavitve'
+    settings_account_description: 'Z obsežnimi nastavitvami računa lahko prilagodite izkušnjo e-podpisovanja in povabite več uporabnikov.'
+    support: 'Podpora'
+    support_description: 'Uporabite lahko samopostrežnega AI pomočnika ali nam pišite na support@docuseal.com.'
+    settings_template_description: 'Uporabite ta gumb za dostop do strani z nastavitvami računa.'
+  doorkeeper:
+    scopes:
+      write: Posodobi svoje podatke
+      read: Beri svoje podatke
+      mcp: Uporabi MCP
+      claudeai: Uporabi Claude AI
+  pagination:
+    submissions:
+      range_with_total: "%{from}-%{to} od %{count} oddaj"
+      range_without_total: "%{from}-%{to} oddaj"
+    templates:
+      range_with_total: "%{from}-%{to} od %{count} predlog"
+      range_without_total: "%{from}-%{to} predlog"
+    template_folders:
+      range_with_total: "%{from}-%{to} od %{count} map"
+      range_without_total: "%{from}-%{to} map"
+    users:
+      range_with_total: "%{from}-%{to} od %{count} uporabnikov"
+      range_without_total: "%{from}-%{to} uporabnikov"
+    items:
+      range_with_total: "%{from}-%{to} od %{count} elementov"
+      range_without_total: "%{from}-%{to} elementov"
+    events:
+      range_with_total: "%{from}-%{to} od %{count} dogodkov"
+      range_without_total: "%{from}-%{to} dogodkov"
+  variables:
+    account_name: Ime računa
+    submitter_link: Povezava podpisnika
+    template_name: Ime predloge
+    submission_submitters: Seznam podpisnikov
+    submission_link: Povezava oddaje
+    documents_link: Povezava do dokumentov
+  time:
+    formats:
+      detailed: "%d. %B %Y %H:%M:%S"
+  date:
+    formats:
+      default: "%d.%m.%Y"
+
+sl-SI:
+  <<: *sl
