@@ -8393,16 +8393,20 @@ sl: &sl
   sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Podpišite dokumente z zaupanja vrednim potrdilom DocuSeal. Vaši dokumenti in podatki nikoli niso deljeni z DocuSeal. Za generiranje zaupanja vrednega podpisa je zagotovljen PDF checksum.
   you_have_been_invited_to_submit_the_name_form: 'Povabljeni ste k oddaji obrazca "%{name}".'
   you_have_been_invited_to_sign_the_name: 'Povabljeni ste k podpisu "%{name}".'
+  you_have_been_invited_to_view_the_name: 'Povabljeni ste k ogledu "%{name}".'
   alternatively_you_can_review_and_download_your_copy_using_the_link_below: "Alternativno si lahko ogledate in prenesete svojo kopijo prek spodnje povezave:"
   please_check_the_copy_of_your_name_in_the_email_attachments: 'Prosimo, preverite kopijo dokumenta "%{name}" v prilogah e-pošte.'
   awaiting_completion_by_the_other_party: "Čakanje na dokončanje s strani druge stranke"
   review_and_sign: Preglej in podpiši
+  view_document: Poglej dokument
   review_and_submit: Preglej in oddaj
   please_contact_us_by_replying_to_this_email_if_you_have_any_questions: "Če imate kakršnakoli vprašanja, nam pišite z odgovorom na to e-pošto."
   submitter_invitation_sms_body_sign: '{account.name} vas vabi k podpisu dokumenta: {submitter.link}'
+  submitter_invitation_sms_body_view: '{account.name} vas vabi k ogledu dokumenta: {submitter.link}'
   verification_code_sms_body: 'Potrditvena koda: {code}'
   you_are_invited_to_submit_a_form: 'Povabljeni ste k oddaji obrazca'
   you_are_invited_to_sign_a_document: 'Povabljeni ste k podpisu dokumenta'
+  you_are_invited_to_view_a_document: 'Povabljeni ste k ogledu dokumenta'
   you_are_invited_to_sign_documents: 'Povabljeni ste k podpisu dokumentov'
   your_document_copy: 'Vaša kopija dokumenta'
   name_has_been_completed_by_submitters: '"%{name}" je dokončal %{submitters}.'
@@ -8413,6 +8417,17 @@ sl: &sl
     Povabljeni ste k podpisu "{template.name}".
 
     [Preglej in podpiši]({submitter.link})
+
+    Če imate kakršnakoli vprašanja, nam pišite z odgovorom na to e-pošto.
+
+    Hvala,
+    {account.name}
+  submitter_invitation_email_view_body: |
+    Živjo,
+
+    Povabljeni ste k ogledu "{template.name}".
+
+    [Poglej dokument]({submitter.link})
 
     Če imate kakršnakoli vprašanja, nam pišite z odgovorom na to e-pošto.
 
@@ -8603,6 +8618,8 @@ sl: &sl
   invalid_timeserver: Neveljaven časovni strežnik
   email_templates: E-poštne predloge
   signature_request_email: E-pošta zahteve po podpisu
+  view_documents_email: E-pošta za ogled dokumentov
+  view_only: Samo ogled
   signature_request_reminder_email: E-pošta opomnika zahteve po podpisu
   signature_request_sms: SMS zahteve po podpisu
   verification_code_sms: SMS potrditvene kode
@@ -8862,6 +8879,7 @@ sl: &sl
   form_has_been_archived: Obrazec je arhiviran.
   form_has_been_expired: Obrazec je potekel.
   form_has_been_declined: Obrazec je zavrnjen.
+  form_is_view_only: Obrazec je samo za ogled.
   file_is_missing: Datoteka manjka
   folder_name_has_been_updated: Ime mape je posodobljeno.
   unable_to_rename_folder: Ni mogoče preimenovati mape.
@@ -8940,6 +8958,10 @@ sl: &sl
   signers: Podpisniki
   not_invited_yet: Še ni povabljen
   not_completed_yet: Še ni dokončano
+  not_completed: Ni dokončano
+  not_viewed_yet: Še ni ogledano
+  not_viewed: Ni ogledano
+  viewed_on_time: Ogledano %{time}
   declined_on_time: 'Zavrnjeno dne %{time}'
   expire_on_time: 'Poteče dne %{time}'
   sign_in_person: Podpiši osebno
@@ -9185,6 +9207,7 @@ sl: &sl
   if_you_did_not_make_this_change_please_contact_us_by_replying_to_this_email: Če te spremembe niste naredili vi, nas kontaktirajte z odgovorom na to e-pošto.
   your_email_address_has_been_released_immediately_you_can_now_be_added_to_your_company_team_without_waiting_for_the_deletion_period_to_end: Vaš e-poštni naslov je bil takoj sproščen. Če se pridružujete ekipi, vas je zdaj mogoče dodati v ekipo podjetja brez čakanja na iztek obdobja izbrisa.
   reset_default: Ponastavi privzeto
+  smtp_settings_have_been_reset: Nastavitve SMTP so bile ponastavljene.
   send_signature_request_email: Pošlji e-pošto zahteve po podpisu
   last_3_months: Zadnje 3 mesece
   last_6_months: Zadnjih 6 mesecev
