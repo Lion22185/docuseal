@@ -8807,7 +8807,6 @@ nl-NL:
   <<: *nl
 
 sl: &sl
-  # Core UI translations (expanded as needed)
   language_en: Angleščina
   language_en-US: Angleščina (ZDA)
   language_en-GB: Angleščina (VB)
@@ -8841,6 +8840,7 @@ sl: &sl
   thanks: Hvala
   private: Zasebno
   _variables: Spremenljivke
+  your_email_address_has_been_released_immediately_you_can_now_be_added_to_your_company_team_without_waiting_for_the_deletion_period_to_end: Vaš e-poštni naslov je bil takoj sproščen. Če se pridružujete ekipi, vas je zdaj mogoče dodati v ekipo podjetja brez čakanja na iztek obdobja izbrisa.
   make_all_newly_created_templates_private_to_their_creator_and_admins_by_default: Naj bodo vse novo ustvarjene predloge privzeto zasebne za ustvarjalca in skrbnike.
   create_templates_with_admin_access_by_default: Ustvari predloge s skrbniškim dostopom privzeto
   require_email_2fa: Zahtevaj e-poštno 2FA
@@ -8917,8 +8917,8 @@ sl: &sl
   you_are_invited_to_product_name: Povabljeni ste k %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Povabljeni ste k %{account_name} %{product_name}. Registrirajte se prek spodnje povezave:'
   sent_using_product_name_in_testing_mode_html: ''
-  sent_using_product_name_open_source_software_html: ''
   sent_using_product_name_free_document_signing_html: ''
+  sent_using_product_name_open_source_software_html: ''
   sent_with_docuseal_pro_html: 'Poslano z <a href="%{product_url}">DocuSeal Pro</a>'
   show_send_with_docuseal_pro_attribution_in_emails_html: Pokaži atribucijo "Poslano z <span class="link">DocuSeal Pro</span>" v e-poštah
   sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Podpišite dokumente z zaupanja vrednim potrdilom DocuSeal. Vaši dokumenti in podatki nikoli niso deljeni z DocuSeal. Za generiranje zaupanja vrednega podpisa je zagotovljen PDF checksum.
@@ -9010,12 +9010,16 @@ sl: &sl
   download_documents: Prenesi dokumente
   downloading: Prenos
   download: Prenesi
+  page: Stran
   decline: Zavrni
   declined: Zavrnjeno
+  delegate: Delegiraj
+  enter_the_email_address_of_the_person_you_want_to_delegate_to: Vnesite e-poštni naslov osebe, na katero želite delegirati.
   decline_reason: Razlog zavrnitve
   provide_a_reason: Navedite razlog
   notify_the_sender_with_the_reason_you_declined: Obvesti pošiljatelja o razlogu zavrnitve
   form_has_been_declined_on_html: 'Obrazec je bil zavrnjen <span class="font-semibold">%{time}</span>'
+  document_has_been_delegated_on_html: 'Dokument je bil delegiran <span class="font-semibold">%{time}</span>'
   name_declined_by_submitter: '"%{name}" zavrnil %{submitter}'
   name_declined_by_submitter_with_the_following_reason: '"%{name}" je zavrnil %{submitter} z naslednjim razlogom:'
   completed_successfully: Uspešno dokončano
@@ -9051,6 +9055,7 @@ sl: &sl
   allow_typed_text_signatures: Dovoli podpis z vtipkanim besedilom
   allow_to_resubmit_completed_forms: Dovoli ponovno oddajo dokončanih obrazcev
   allow_to_decline_documents: Dovoli zavrnitev dokumentov
+  allow_to_delegate_documents: Dovoli delegiranje dokumentov
   remember_and_pre_fill_signatures: Zapomni in predizpolni podpise
   require_authentication_for_file_download_links: Zahtevaj overjanje za povezave prenosa datotek
   combine_completed_documents_and_audit_log: Združi dokončane dokumente in revizijski dnevnik
@@ -9214,6 +9219,9 @@ sl: &sl
   sign_out: Odjava
   page_number: 'Stran %{number}'
   powered_by: Poganja ga
+  qr_code: QR koda
+  print: Natisni
+  scan_the_qr_code_above_with_your_phone_camera_to_open_and_sign_this_document: S kamero telefona skenirajte zgornjo QR kodo, da odprete in podpišete ta dokument.
   count_documents_signed_with_html: '<b>%{count}</b> podpisanih dokumentov z'
   storage: Shranjevanje
   notifications: Obvestila
@@ -9440,6 +9448,12 @@ sl: &sl
   unable_to_resend_webhook_request: Ni mogoče ponovno poslati webhook zahteve.
   new_webhook: Nov webhook
   delete_webhook: Izbriši webhook
+  security: Varnost
+  webhook_security: Varnost webhooka
+  secret: Skrivnost
+  hmac: HMAC
+  hmac_signing_secret: HMAC podpisna skrivnost
+  hmac_signature_header_hint_html: 'Vsaka zahteva je podpisana z glavo %{header}: &lt;timestamp&gt;.&lt;sha256&gt;.'
   count_submissions_have_been_created: '%{count} oddaj je ustvarjenih.'
   sms_length_cant_be_longer_than_120_bytes: Dolžina SMS ne sme presegati 120 bajtov
   connected_successfully: Uspešno povezano.
@@ -9503,6 +9517,9 @@ sl: &sl
   create_a_new_template_document_form_or_submit_the_existing_one_html: <a href="%{new_template_link}" data-turbo-frame="modal" class="inline underline font-medium">Ustvari novo predlogo</a> dokumentnega obrazca ali <a href="%{start_form_link}" target="_blank" class="inline underline font-medium">oddaj obstoječega</a>
   send_email_copy_with_completed_documents_to_a_specified_bcc_address: Pošlji kopijo e-pošte z dokončanimi dokumenti na naveden BCC naslov.
   re_send_email: Ponovno pošlji e-pošto
+  re_send_emails: Ponovno pošlji e-pošte
+  are_you_sure_you_want_to_re_send_email_to_n_recipients: Ali ste prepričani, da želite ponovno poslati vabilo po e-pošti %{count} prejemnikom?
+  emails_have_been_sent_to_n_recipients: E-pošte so bile poslane %{count} prejemnikom.
   send_email: Pošlji e-pošto
   copy_share_link: Kopiraj povezavo za deljenje
   copied_to_clipboard: Kopirano v odložišče
@@ -9647,6 +9664,7 @@ sl: &sl
   share_link: Deli povezavo
   enable_shared_link: Omogoči skupno povezavo
   share_link_is_currently_disabled: Skupna povezava je trenutno onemogočena
+  dynamic_template_with_variables_cannot_be_used_via_shared_link: Dinamične predloge s spremenljivkami ni mogoče uporabiti prek skupne povezave.
   select_data_residency: Izberi rezidenčnost podatkov
   account_name_has_invited_you_to_fill_and_sign_documents_online_effortlessly_with_a_secure_fast_and_user_friendly_digital_document_signing_solution: '%{account_name} vas vabi k izpolnjevanju in podpisovanju dokumentov na spletu brez napora z varno, hitro in uporabniku prijazno rešitvijo digitalnega podpisovanja.'
   review_or_download_completed_documents_fill_and_sign_documents_online_effortlessly_with_a_secure_fast_and_user_friendly_digital_document_signing_solution: Preglejte ali prenesite dokončane dokumente. Izpolnite in podpišite dokumente na spletu brez napora z varno, hitro in uporabniku prijazno rešitvijo.
@@ -9702,7 +9720,6 @@ sl: &sl
   allow_signers_to_resubmit_forms_after_completion_useful_when_corrections_or_multiple_submissions_are_needed: Dovoli podpisnikom ponovno oddajo obrazcev po dokončanju – uporabno za popravke ali več oddaj.
   allow_recipients_to_decline_signing_a_document_the_decline_reason_notification_will_be_sent_to_the_signature_requester: Dovoli prejemnikom zavrnitev podpisa dokumenta. Obvestilo z razlogom bo poslano zahtevalcu podpisa.
   allow_recipients_to_delegate_documents: Dovoli prejemnikom delegiranje dokumentov drugi osebi prek e-pošte. To je uporabno, ko mora prvotni prejemnik dokument predati pooblaščenemu podpisniku.
-  allow_to_delegate_documents: Dovoli delegiranje dokumentov
   save_a_users_signature_and_automatically_pre_fill_it_in_future_signing_sessions: "Shrani podpis uporabnika in ga samodejno predizpolni v prihodnjih sejah podpisovanja."
   make_document_download_links_expire_after_40_minutes_to_prevent_long_term_access_and_enhance_security: Povezave za prenos dokumentov potečejo po 40 minutah za boljšo varnost.
   require_authentication_with_user_login_or_api_key_to_access_the_document_download_links: Zahtevaj overjanje z uporabniško prijavo ali API ključem za dostop do povezav prenosa.
@@ -9717,30 +9734,6 @@ sl: &sl
   desktop: Namizje
   mobile: Mobilno
   tablet: Tablica
-  delegate: Delegiraj
-  enter_the_email_address_of_the_person_you_want_to_delegate_to: Vnesite e-poštni naslov osebe, na katero želite delegirati.
-  document_has_been_delegated_on_html: 'Dokument je bil delegiran <span class="font-semibold">%{time}</span>'
-  dynamic_template_with_variables_cannot_be_used_via_shared_link: Dinamične predloge s spremenljivkami ni mogoče uporabiti prek skupne povezave.
-  re_send_emails: Ponovno pošlji e-pošte
-  are_you_sure_you_want_to_re_send_email_to_n_recipients: Ali ste prepričani, da želite ponovno poslati vabilo po e-pošti %{count} prejemnikom?
-  emails_have_been_sent_to_n_recipients: E-pošte so bile poslane %{count} prejemnikom.
-  qr_code: QR koda
-  print: Natisni
-  scan_the_qr_code_above_with_your_phone_camera_to_open_and_sign_this_document: S kamero telefona skenirajte zgornjo QR kodo, da odprete in podpišete ta dokument.
-  security: Varnost
-  webhook_security: Varnost webhooka
-  secret: Skrivnost
-  hmac: HMAC
-  hmac_signing_secret: HMAC podpisna skrivnost
-  hmac_signature_header_hint_html: 'Vsaka zahteva je podpisana z glavo %{header}: &lt;timestamp&gt;.&lt;sha256&gt;.'
-  page: Stran
-  open_file_from: 'Odpri datoteko iz'
-  open: Odpri
-  cancel: Prekliči
-  your_email_address_has_been_changed: Vaš e-poštni naslov je bil spremenjen.
-  the_email_address_for_your_account_has_been_changed_to_new_email: E-poštni naslov vašega računa je bil spremenjen v %{new_email}.
-  if_you_did_not_make_this_change_please_contact_us_by_replying_to_this_email: Če te spremembe niste naredili vi, nas kontaktirajte z odgovorom na to e-pošto.
-  your_email_address_has_been_released_immediately_you_can_now_be_added_to_your_company_team_without_waiting_for_the_deletion_period_to_end: Vaš e-poštni naslov je bil takoj sproščen. Če se pridružujete ekipi, vas je zdaj mogoče dodati v ekipo podjetja brez čakanja na iztek obdobja izbrisa.
   reset_default: Ponastavi privzeto
   smtp_settings_have_been_reset: Nastavitve SMTP so bile ponastavljene.
   send_signature_request_email: Pošlji e-pošto zahteve po podpisu
@@ -9803,6 +9796,19 @@ sl: &sl
   connect_to_docuseal_mcp: Poveži se z DocuSeal MCP
   add_the_following_to_your_mcp_client_configuration: Dodajte naslednje v konfiguracijo vašega MCP odjemalca
   works_with_claude_desktop_cursor_windsurf_vs_code_and_any_mcp_compatible_client: Deluje z Claude Desktop, Cursor, Windsurf, VS Code in vsakim MCP-kompatibilnim odjemalcem.
+  your_email_address_has_been_changed: Vaš e-poštni naslov je bil spremenjen.
+  the_email_address_for_your_account_has_been_changed_to_new_email: E-poštni naslov vašega računa je bil spremenjen v %{new_email}.
+  if_you_did_not_make_this_change_please_contact_us_by_replying_to_this_email: Če te spremembe niste naredili vi, nas kontaktirajte z odgovorom na to e-pošto.
+  open_file_from: 'Odpri datoteko iz'
+  cancel: Prekliči
+  open: Odpri
+  signature_request_email_sent_to_recipients_with_a_link_to_review_and_sign: E-pošta zahteve po podpisu, poslana prejemnikom s povezavo za pregled in podpis.
+  view_only_email_sent_to_recipients_that_need_to_only_review_the_documents: E-pošta samo za ogled, poslana prejemnikom, ki morajo dokumente le pregledati.
+  reminds_recipients_who_havent_completed_their_part_yet_to_sign_following_the_reminders_schedule: Opominja prejemnike, ki svojega dela še niso podpisali, v skladu z urnikom opomnikov.
+  signature_request_sms_sent_to_recipients_with_a_link_to_review_and_sign: SMS zahteve po podpisu, poslan prejemnikom s povezavo za pregled in podpis.
+  phone_2fa_verification_text_message: Besedilno sporočilo za preverjanje telefonske 2FA.
+  notification_email_sent_to_the_sender_user_and_bcc_addresses_once_the_submission_is_completed_by_all_parties: Obvestilna e-pošta, poslana pošiljatelju in na BCC naslove, ko vse stranke dokončajo oddajo.
+  completed_documents_copy_email_sent_to_recipients_upon_completion_containing_their_documents: E-pošta s kopijo dokončanih dokumentov, poslana prejemnikom ob dokončanju, ki vsebuje njihove dokumente.
   devise:
     confirmations:
       confirmed: Vaš e-naslov je bil uspešno potrjen.
@@ -9818,6 +9824,7 @@ sl: &sl
     invite: Povabilo
     link: Povezava
     mcp: MCP
+    self: Podpišite sami
   submission_event_names:
     send_email_to_html: '<b>E-pošta poslana</b> na %{submitter_name}'
     bounce_email_html: '<b>E-pošta odbita</b> %{submitter_name}'
@@ -9835,14 +9842,14 @@ sl: &sl
     view_form_by_html: '<b>Obrazec ogledan</b> s strani %{submitter_name}'
     invite_party_by_html: '<b>Povabljen</b> %{invited_submitter_name} s strani %{submitter_name}'
     complete_form_by_html: '<b>Oddaja dokončana</b> s strani %{submitter_name}'
-    decline_form_by_html: '<b>Obrazec zavrnjen</b> s strani %{submitter_name}'
-    delegate_form_by_html: '<b>Delegirano</b> od %{from} do %{to}'
     start_verification_by_html: '<b>Preverjanje identitete začeto</b> s strani %{submitter_name}'
     complete_verification_by_html: '<b>Preverjanje identitete dokončano</b> s strani %{submitter_name} z %{provider}'
     start_kba_by_html: '<b>KBA začeto</b> s strani %{submitter_name}'
     complete_kba_by_html: '<b>KBA dokončano</b> s strani %{submitter_name}'
     fail_kba_by_html: '<b>KBA neuspešno</b> s strani %{submitter_name}'
     api_complete_form_by_html: '<b>Oddaja dokončana prek API</b> s strani %{submitter_name}'
+    decline_form_by_html: '<b>Obrazec zavrnjen</b> s strani %{submitter_name}'
+    delegate_form_by_html: '<b>Delegirano</b> od %{from} do %{to}'
   import_list:
     select_worksheet: Izberi delovni list
     open: Odpri

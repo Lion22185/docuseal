@@ -1773,6 +1773,7 @@ const sl = {
   email_has_been_sent: 'E-pošta je bila poslana',
   processing: 'Obdelava',
   pay_with_stripe: 'Plačaj s Stripe',
+  pay_with_paypal: 'Plačaj s PayPal',
   reupload: 'Ponovno naloži',
   upload: 'Naloži',
   files: 'Datoteke',
