@@ -9621,6 +9621,7 @@ sl: &sl
   the_code_has_been_sent_to_your_email: Koda je bila poslana na vaš e-naslov.
   enter_the_verification_code_from_your_email: Vnesite potrditveno kodo iz e-pošte.
   too_many_attempts: Preveč poskusov.
+  verification_email_bounced: "Potrditvene kode ni bilo mogoče poslati: e-pošta na ta naslov je bila zavrnjena."
   verification_code: Potrditvena koda
   resend_code: Ponovno pošlji kodo
   verify_new_sign_in: Preveri novo prijavo
