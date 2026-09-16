@@ -11,6 +11,7 @@ module Submitters
   }.freeze
 
   UnableToSendCode = Class.new(StandardError)
+  BouncedEmail = Class.new(UnableToSendCode)
   InvalidOtp = Class.new(StandardError)
   MaliciousFileExtension = Class.new(StandardError)
   ParamsError = Class.new(StandardError)
@@ -49,7 +50,7 @@ module Submitters
   end
 
   def fulltext_search_field(current_user, submitters, keyword, field_name)
-    keyword = keyword.delete("\0\\")
+    keyword = keyword.delete("\0").tr('\\', ' ').squish
 
     return submitters.none if keyword.blank?
 
@@ -143,7 +144,7 @@ module Submitters
   def normalize_preferences(account, user, params)
     preferences = {}
 
-    message_params = params['message'].presence || params.slice('subject', 'body').presence
+    message_params = (params['message'].presence || params.slice('subject', 'body')).compact_blank
 
     if message_params.present?
       email_message = EmailMessages.find_or_create_for_account_user(account, user,
@@ -162,6 +163,21 @@ module Submitters
     preferences['completed_redirect_url'] = params['completed_redirect_url'] if params.key?('completed_redirect_url')
 
     preferences
+  end
+
+  def fetch_values_for_delegate(submitter)
+    fields = submitter.submission.template_fields || submitter.template.fields
+    default_values = submitter.preferences['default_values'] || {}
+
+    field_uuids = fields.filter_map do |field|
+      next if field['submitter_uuid'] != submitter.uuid
+      next unless field['type'].in?(%w[signature phone verification kba initials])
+      next if default_values[field['uuid']].present?
+
+      field['uuid']
+    end
+
+    submitter.values.except(*field_uuids)
   end
 
   def send_signature_requests(submitters, delay_seconds: nil)
@@ -237,17 +253,28 @@ module Submitters
       I18n.l(completed_at.in_time_zone(submitter.account.timezone), format: :short)
     end
 
-    "#{filename}.#{blob.filename.extension}"
+    "#{filename}.#{blob.filename.extension}".tr('/', '-')
   end
 
   def send_shared_link_email_verification_code(submitter, request:)
     RateLimit.call("send-otp-code-#{request.remote_ip}", limit: 2, ttl: 45.seconds, enabled: true)
+
+    if Docuseal.multitenant? && email_bounced_recently?(submitter.email)
+      Rollbar.warning("Bounced OTP email for template: #{submitter.submission.template.id}") if defined?(Rollbar)
+
+      raise BouncedEmail, I18n.t(:verification_email_bounced)
+    end
 
     TemplateMailer.otp_verification_email(submitter.submission.template, email: submitter.email).deliver_later!
   rescue RateLimit::LimitApproached
     Rollbar.warning("Limit verification code for template: #{submitter.submission.template.id}") if defined?(Rollbar)
 
     raise UnableToSendCode, I18n.t('too_many_attempts')
+  end
+
+  def email_bounced_recently?(email)
+    EmailEvent.exists?(email:, event_type: %w[bounce soft_bounce permanent_bounce],
+                       event_datetime: 24.hours.ago..Time.current)
   end
 
   def verify_link_otp!(otp, submitter)

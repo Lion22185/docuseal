@@ -8,6 +8,7 @@ module Submitters
     VARIABLE_REGEXP = /\{\{?(\w+)\}\}?/
     PHONE_REGEXP = /[+\d()\s-]+/
     NONEDITABLE_FIELD_TYPES = %w[stamp heading strikethrough].freeze
+    REQUIRED_FIELD_TYPES = %w[payment kba verification].freeze
 
     STRFTIME_MAP = {
       'hour' => '%-k',
@@ -95,7 +96,9 @@ module Submitters
       required_field_uuids_acc.each do |uuid|
         next if submitter.values[uuid].present?
 
-        raise RequiredFieldError, uuid if validate_required
+        if validate_required || submitter.submission.fields_uuid_index.dig(uuid, 'type').in?(REQUIRED_FIELD_TYPES)
+          raise RequiredFieldError, uuid
+        end
 
         Rollbar.warning("Required field #{submitter.id}: #{uuid}") if defined?(Rollbar)
       end
@@ -487,7 +490,7 @@ module Submitters
 
         submission.submitters.create!(uuid: s['uuid'], email:, phone:, account_id: submitter.account_id)
 
-        SubmissionEvents.create_with_tracking_data(submitter, 'invite_party', request, { uuid: submitter.uuid })
+        SubmissionEvents.create_with_tracking_data(submitter, 'invite_party', request, { uuid: s['uuid'] })
 
         is_invited = true
       end
